@@ -1,0 +1,2652 @@
+2017-05-12 23:32:50 [127.0.0.1][-][-][error][yii\base\ErrorException:8] yii\base\ErrorException: Undefined index: texto1 in /var/www/html/projetoyiiaula/views/site/index.php:25
+Stack trace:
+#0 /var/www/html/projetoyiiaula/views/site/index.php(25): yii\base\ErrorHandler->handleError(8, 'Undefined index...', '/var/www/html/p...', 25, Array)
+#1 /var/www/html/projetoyiiaula/vendor/yiisoft/yii2/base/View.php(328): require('/var/www/html/p...')
+#2 /var/www/html/projetoyiiaula/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/var/www/html/p...', Array)
+#3 /var/www/html/projetoyiiaula/vendor/yiisoft/yii2/base/View.php(152): yii\base\View->renderFile('/var/www/html/p...', Array, Object(app\controllers\SiteController))
+#4 /var/www/html/projetoyiiaula/vendor/yiisoft/yii2/base/Controller.php(381): yii\base\View->render('index', Array, Object(app\controllers\SiteController))
+#5 /var/www/html/projetoyiiaula/controllers/SiteController.php(72): yii\base\Controller->render('index', Array)
+#6 [internal function]: app\controllers\SiteController->actionIndex()
+#7 /var/www/html/projetoyiiaula/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#8 /var/www/html/projetoyiiaula/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#9 /var/www/html/projetoyiiaula/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('index', Array)
+#10 /var/www/html/projetoyiiaula/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('site/index', Array)
+#11 /var/www/html/projetoyiiaula/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 /var/www/html/projetoyiiaula/web/index.php(12): yii\base\Application->run()
+#13 {main}
+2017-05-12 23:32:50 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'site/index'
+]
+
+$_COOKIE = [
+    '_csrf' => 'e869d73164b0e4dd1f246f605bdc91b7f84074db7dd53bda34f47f0dab18c7aea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"z1YETl-iY6mycUbFZCDOuJJrC1nfbSXZ\";}'
+    'Phpstorm-f7d45158' => '7bfbf979-e7aa-4019-80c7-447d19156733'
+    'PHPSESSID' => '5hm1rfk5ldl4hrs0d0b5eioq3t'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/projetoyiiaula/web/index.php'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=e869d73164b0e4dd1f246f605bdc91b7f84074db7dd53bda34f47f0dab18c7aea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22z1YETl-iY6mycUbFZCDOuJJrC1nfbSXZ%22%3B%7D; Phpstorm-f7d45158=7bfbf979-e7aa-4019-80c7-447d19156733; PHPSESSID=5hm1rfk5ldl4hrs0d0b5eioq3t'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.25 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.25 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/projetoyiiaula/web/index.php'
+    'REMOTE_PORT' => '45262'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Findex'
+    'REQUEST_URI' => '/projetoyiiaula/web/index.php?r=site%2Findex'
+    'SCRIPT_NAME' => '/projetoyiiaula/web/index.php'
+    'PHP_SELF' => '/projetoyiiaula/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1494631970.089
+    'REQUEST_TIME' => 1494631970
+]
+2017-05-12 23:32:50 [127.0.0.1][-][-][error][yii\web\Session::open] session_start(): Cannot send session cache limiter - headers already sent (output started at /var/www/html/projetoyiiaula/vendor/yiisoft/yii2/web/Response.php:391)
+2017-05-12 23:32:50 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'site/index'
+]
+
+$_COOKIE = [
+    '_csrf' => 'e869d73164b0e4dd1f246f605bdc91b7f84074db7dd53bda34f47f0dab18c7aea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"z1YETl-iY6mycUbFZCDOuJJrC1nfbSXZ\";}'
+    'Phpstorm-f7d45158' => '7bfbf979-e7aa-4019-80c7-447d19156733'
+    'PHPSESSID' => '5hm1rfk5ldl4hrs0d0b5eioq3t'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/projetoyiiaula/web/index.php'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=e869d73164b0e4dd1f246f605bdc91b7f84074db7dd53bda34f47f0dab18c7aea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22z1YETl-iY6mycUbFZCDOuJJrC1nfbSXZ%22%3B%7D; Phpstorm-f7d45158=7bfbf979-e7aa-4019-80c7-447d19156733; PHPSESSID=5hm1rfk5ldl4hrs0d0b5eioq3t'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.25 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.25 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/projetoyiiaula/web/index.php'
+    'REMOTE_PORT' => '45262'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Findex'
+    'REQUEST_URI' => '/projetoyiiaula/web/index.php?r=site%2Findex'
+    'SCRIPT_NAME' => '/projetoyiiaula/web/index.php'
+    'PHP_SELF' => '/projetoyiiaula/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1494631970.089
+    'REQUEST_TIME' => 1494631970
+]
+2017-05-12 23:34:23 [127.0.0.1][-][-][error][ParseError] ParseError: syntax error, unexpected '{' in /var/www/html/projetoyiiaula/controllers/SiteController.php:66
+Stack trace:
+#0 [internal function]: yii\BaseYii::autoload('app\\controllers...')
+#1 [internal function]: spl_autoload_call('app\\controllers...')
+#2 /var/www/html/projetoyiiaula/vendor/yiisoft/yii2/base/Module.php(633): class_exists('app\\controllers...')
+#3 /var/www/html/projetoyiiaula/vendor/yiisoft/yii2/base/Module.php(591): yii\base\Module->createControllerByID('site')
+#4 /var/www/html/projetoyiiaula/vendor/yiisoft/yii2/base/Module.php(517): yii\base\Module->createController('index')
+#5 /var/www/html/projetoyiiaula/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('site/index', Array)
+#6 /var/www/html/projetoyiiaula/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 /var/www/html/projetoyiiaula/web/index.php(12): yii\base\Application->run()
+#8 {main}
+2017-05-12 23:34:23 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'site/index'
+]
+
+$_COOKIE = [
+    '_csrf' => 'e869d73164b0e4dd1f246f605bdc91b7f84074db7dd53bda34f47f0dab18c7aea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"z1YETl-iY6mycUbFZCDOuJJrC1nfbSXZ\";}'
+    'Phpstorm-f7d45158' => '7bfbf979-e7aa-4019-80c7-447d19156733'
+    'PHPSESSID' => '5hm1rfk5ldl4hrs0d0b5eioq3t'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/projetoyiiaula/web/index.php'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=e869d73164b0e4dd1f246f605bdc91b7f84074db7dd53bda34f47f0dab18c7aea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22z1YETl-iY6mycUbFZCDOuJJrC1nfbSXZ%22%3B%7D; Phpstorm-f7d45158=7bfbf979-e7aa-4019-80c7-447d19156733; PHPSESSID=5hm1rfk5ldl4hrs0d0b5eioq3t'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.25 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.25 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/projetoyiiaula/web/index.php'
+    'REMOTE_PORT' => '45288'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Findex'
+    'REQUEST_URI' => '/projetoyiiaula/web/index.php?r=site%2Findex'
+    'SCRIPT_NAME' => '/projetoyiiaula/web/index.php'
+    'PHP_SELF' => '/projetoyiiaula/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1494632063.214
+    'REQUEST_TIME' => 1494632063
+]
+2017-05-12 23:34:23 [127.0.0.1][-][-][error][yii\web\Session::open] session_start(): Cannot send session cache limiter - headers already sent (output started at /var/www/html/projetoyiiaula/vendor/yiisoft/yii2/web/Response.php:391)
+2017-05-12 23:34:23 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'site/index'
+]
+
+$_COOKIE = [
+    '_csrf' => 'e869d73164b0e4dd1f246f605bdc91b7f84074db7dd53bda34f47f0dab18c7aea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"z1YETl-iY6mycUbFZCDOuJJrC1nfbSXZ\";}'
+    'Phpstorm-f7d45158' => '7bfbf979-e7aa-4019-80c7-447d19156733'
+    'PHPSESSID' => '5hm1rfk5ldl4hrs0d0b5eioq3t'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/projetoyiiaula/web/index.php'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=e869d73164b0e4dd1f246f605bdc91b7f84074db7dd53bda34f47f0dab18c7aea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22z1YETl-iY6mycUbFZCDOuJJrC1nfbSXZ%22%3B%7D; Phpstorm-f7d45158=7bfbf979-e7aa-4019-80c7-447d19156733; PHPSESSID=5hm1rfk5ldl4hrs0d0b5eioq3t'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.25 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.25 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/projetoyiiaula/web/index.php'
+    'REMOTE_PORT' => '45288'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Findex'
+    'REQUEST_URI' => '/projetoyiiaula/web/index.php?r=site%2Findex'
+    'SCRIPT_NAME' => '/projetoyiiaula/web/index.php'
+    'PHP_SELF' => '/projetoyiiaula/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1494632063.214
+    'REQUEST_TIME' => 1494632063
+]
+2017-05-12 23:34:41 [127.0.0.1][-][-][error][yii\base\ErrorException:8] yii\base\ErrorException: Undefined index: texto1 in /var/www/html/projetoyiiaula/views/site/index.php:25
+Stack trace:
+#0 /var/www/html/projetoyiiaula/views/site/index.php(25): yii\base\ErrorHandler->handleError(8, 'Undefined index...', '/var/www/html/p...', 25, Array)
+#1 /var/www/html/projetoyiiaula/vendor/yiisoft/yii2/base/View.php(328): require('/var/www/html/p...')
+#2 /var/www/html/projetoyiiaula/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/var/www/html/p...', Array)
+#3 /var/www/html/projetoyiiaula/vendor/yiisoft/yii2/base/View.php(152): yii\base\View->renderFile('/var/www/html/p...', Array, Object(app\controllers\SiteController))
+#4 /var/www/html/projetoyiiaula/vendor/yiisoft/yii2/base/Controller.php(381): yii\base\View->render('index', Array, Object(app\controllers\SiteController))
+#5 /var/www/html/projetoyiiaula/controllers/SiteController.php(72): yii\base\Controller->render('index', Array)
+#6 [internal function]: app\controllers\SiteController->actionIndex()
+#7 /var/www/html/projetoyiiaula/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#8 /var/www/html/projetoyiiaula/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#9 /var/www/html/projetoyiiaula/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('index', Array)
+#10 /var/www/html/projetoyiiaula/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('site/index', Array)
+#11 /var/www/html/projetoyiiaula/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 /var/www/html/projetoyiiaula/web/index.php(12): yii\base\Application->run()
+#13 {main}
+2017-05-12 23:34:41 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'site/index'
+]
+
+$_COOKIE = [
+    '_csrf' => 'e869d73164b0e4dd1f246f605bdc91b7f84074db7dd53bda34f47f0dab18c7aea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"z1YETl-iY6mycUbFZCDOuJJrC1nfbSXZ\";}'
+    'Phpstorm-f7d45158' => '7bfbf979-e7aa-4019-80c7-447d19156733'
+    'PHPSESSID' => '5hm1rfk5ldl4hrs0d0b5eioq3t'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/projetoyiiaula/web/index.php'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=e869d73164b0e4dd1f246f605bdc91b7f84074db7dd53bda34f47f0dab18c7aea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22z1YETl-iY6mycUbFZCDOuJJrC1nfbSXZ%22%3B%7D; Phpstorm-f7d45158=7bfbf979-e7aa-4019-80c7-447d19156733; PHPSESSID=5hm1rfk5ldl4hrs0d0b5eioq3t'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.25 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.25 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/projetoyiiaula/web/index.php'
+    'REMOTE_PORT' => '45300'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Findex'
+    'REQUEST_URI' => '/projetoyiiaula/web/index.php?r=site%2Findex'
+    'SCRIPT_NAME' => '/projetoyiiaula/web/index.php'
+    'PHP_SELF' => '/projetoyiiaula/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1494632081.57
+    'REQUEST_TIME' => 1494632081
+]
+2017-05-12 23:34:41 [127.0.0.1][-][-][error][yii\web\Session::open] session_start(): Cannot send session cache limiter - headers already sent (output started at /var/www/html/projetoyiiaula/vendor/yiisoft/yii2/web/Response.php:391)
+2017-05-12 23:34:41 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'site/index'
+]
+
+$_COOKIE = [
+    '_csrf' => 'e869d73164b0e4dd1f246f605bdc91b7f84074db7dd53bda34f47f0dab18c7aea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"z1YETl-iY6mycUbFZCDOuJJrC1nfbSXZ\";}'
+    'Phpstorm-f7d45158' => '7bfbf979-e7aa-4019-80c7-447d19156733'
+    'PHPSESSID' => '5hm1rfk5ldl4hrs0d0b5eioq3t'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/projetoyiiaula/web/index.php'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=e869d73164b0e4dd1f246f605bdc91b7f84074db7dd53bda34f47f0dab18c7aea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22z1YETl-iY6mycUbFZCDOuJJrC1nfbSXZ%22%3B%7D; Phpstorm-f7d45158=7bfbf979-e7aa-4019-80c7-447d19156733; PHPSESSID=5hm1rfk5ldl4hrs0d0b5eioq3t'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.25 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.25 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/projetoyiiaula/web/index.php'
+    'REMOTE_PORT' => '45300'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Findex'
+    'REQUEST_URI' => '/projetoyiiaula/web/index.php?r=site%2Findex'
+    'SCRIPT_NAME' => '/projetoyiiaula/web/index.php'
+    'PHP_SELF' => '/projetoyiiaula/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1494632081.57
+    'REQUEST_TIME' => 1494632081
+]
+2017-05-12 23:43:52 [127.0.0.1][-][-][error][yii\base\ErrorException:8] yii\base\ErrorException: Undefined offset: 0 in /var/www/html/projetoyiiaula/views/site/index.php:25
+Stack trace:
+#0 /var/www/html/projetoyiiaula/views/site/index.php(25): yii\base\ErrorHandler->handleError(8, 'Undefined offse...', '/var/www/html/p...', 25, Array)
+#1 /var/www/html/projetoyiiaula/vendor/yiisoft/yii2/base/View.php(328): require('/var/www/html/p...')
+#2 /var/www/html/projetoyiiaula/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/var/www/html/p...', Array)
+#3 /var/www/html/projetoyiiaula/vendor/yiisoft/yii2/base/View.php(152): yii\base\View->renderFile('/var/www/html/p...', Array, Object(app\controllers\SiteController))
+#4 /var/www/html/projetoyiiaula/vendor/yiisoft/yii2/base/Controller.php(381): yii\base\View->render('index', Array, Object(app\controllers\SiteController))
+#5 /var/www/html/projetoyiiaula/controllers/SiteController.php(72): yii\base\Controller->render('index', Array)
+#6 [internal function]: app\controllers\SiteController->actionIndex()
+#7 /var/www/html/projetoyiiaula/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#8 /var/www/html/projetoyiiaula/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#9 /var/www/html/projetoyiiaula/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('index', Array)
+#10 /var/www/html/projetoyiiaula/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('site/index', Array)
+#11 /var/www/html/projetoyiiaula/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 /var/www/html/projetoyiiaula/web/index.php(12): yii\base\Application->run()
+#13 {main}
+2017-05-12 23:43:52 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'site/index'
+]
+
+$_COOKIE = [
+    '_csrf' => 'e869d73164b0e4dd1f246f605bdc91b7f84074db7dd53bda34f47f0dab18c7aea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"z1YETl-iY6mycUbFZCDOuJJrC1nfbSXZ\";}'
+    'Phpstorm-f7d45158' => '7bfbf979-e7aa-4019-80c7-447d19156733'
+    'PHPSESSID' => '5hm1rfk5ldl4hrs0d0b5eioq3t'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/projetoyiiaula/web/index.php'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=e869d73164b0e4dd1f246f605bdc91b7f84074db7dd53bda34f47f0dab18c7aea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22z1YETl-iY6mycUbFZCDOuJJrC1nfbSXZ%22%3B%7D; Phpstorm-f7d45158=7bfbf979-e7aa-4019-80c7-447d19156733; PHPSESSID=5hm1rfk5ldl4hrs0d0b5eioq3t'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.25 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.25 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/projetoyiiaula/web/index.php'
+    'REMOTE_PORT' => '45458'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Findex'
+    'REQUEST_URI' => '/projetoyiiaula/web/index.php?r=site%2Findex'
+    'SCRIPT_NAME' => '/projetoyiiaula/web/index.php'
+    'PHP_SELF' => '/projetoyiiaula/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1494632632.809
+    'REQUEST_TIME' => 1494632632
+]
+2017-05-12 23:43:52 [127.0.0.1][-][-][error][yii\web\Session::open] session_start(): Cannot send session cache limiter - headers already sent (output started at /var/www/html/projetoyiiaula/vendor/yiisoft/yii2/web/Response.php:391)
+2017-05-12 23:43:52 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'site/index'
+]
+
+$_COOKIE = [
+    '_csrf' => 'e869d73164b0e4dd1f246f605bdc91b7f84074db7dd53bda34f47f0dab18c7aea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"z1YETl-iY6mycUbFZCDOuJJrC1nfbSXZ\";}'
+    'Phpstorm-f7d45158' => '7bfbf979-e7aa-4019-80c7-447d19156733'
+    'PHPSESSID' => '5hm1rfk5ldl4hrs0d0b5eioq3t'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/projetoyiiaula/web/index.php'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=e869d73164b0e4dd1f246f605bdc91b7f84074db7dd53bda34f47f0dab18c7aea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22z1YETl-iY6mycUbFZCDOuJJrC1nfbSXZ%22%3B%7D; Phpstorm-f7d45158=7bfbf979-e7aa-4019-80c7-447d19156733; PHPSESSID=5hm1rfk5ldl4hrs0d0b5eioq3t'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.25 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.25 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/projetoyiiaula/web/index.php'
+    'REMOTE_PORT' => '45458'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Findex'
+    'REQUEST_URI' => '/projetoyiiaula/web/index.php?r=site%2Findex'
+    'SCRIPT_NAME' => '/projetoyiiaula/web/index.php'
+    'PHP_SELF' => '/projetoyiiaula/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1494632632.809
+    'REQUEST_TIME' => 1494632632
+]
+2017-05-12 23:46:59 [127.0.0.1][-][-][error][ParseError] ParseError: syntax error, unexpected '}', expecting ',' or ';' in /var/www/html/projetoyiiaula/views/site/index.php:44
+Stack trace:
+#0 /var/www/html/projetoyiiaula/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/var/www/html/p...', Array)
+#1 /var/www/html/projetoyiiaula/vendor/yiisoft/yii2/base/View.php(152): yii\base\View->renderFile('/var/www/html/p...', Array, Object(app\controllers\SiteController))
+#2 /var/www/html/projetoyiiaula/vendor/yiisoft/yii2/base/Controller.php(381): yii\base\View->render('index', Array, Object(app\controllers\SiteController))
+#3 /var/www/html/projetoyiiaula/controllers/SiteController.php(72): yii\base\Controller->render('index', Array)
+#4 [internal function]: app\controllers\SiteController->actionIndex()
+#5 /var/www/html/projetoyiiaula/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#6 /var/www/html/projetoyiiaula/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#7 /var/www/html/projetoyiiaula/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('index', Array)
+#8 /var/www/html/projetoyiiaula/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('site/index', Array)
+#9 /var/www/html/projetoyiiaula/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 /var/www/html/projetoyiiaula/web/index.php(12): yii\base\Application->run()
+#11 {main}
+2017-05-12 23:46:59 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'site/index'
+]
+
+$_COOKIE = [
+    '_csrf' => 'e869d73164b0e4dd1f246f605bdc91b7f84074db7dd53bda34f47f0dab18c7aea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"z1YETl-iY6mycUbFZCDOuJJrC1nfbSXZ\";}'
+    'Phpstorm-f7d45158' => '7bfbf979-e7aa-4019-80c7-447d19156733'
+    'PHPSESSID' => '5hm1rfk5ldl4hrs0d0b5eioq3t'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/projetoyiiaula/web/index.php'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=e869d73164b0e4dd1f246f605bdc91b7f84074db7dd53bda34f47f0dab18c7aea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22z1YETl-iY6mycUbFZCDOuJJrC1nfbSXZ%22%3B%7D; Phpstorm-f7d45158=7bfbf979-e7aa-4019-80c7-447d19156733; PHPSESSID=5hm1rfk5ldl4hrs0d0b5eioq3t'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.25 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.25 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/projetoyiiaula/web/index.php'
+    'REMOTE_PORT' => '45520'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Findex'
+    'REQUEST_URI' => '/projetoyiiaula/web/index.php?r=site%2Findex'
+    'SCRIPT_NAME' => '/projetoyiiaula/web/index.php'
+    'PHP_SELF' => '/projetoyiiaula/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1494632819.754
+    'REQUEST_TIME' => 1494632819
+]
+2017-05-12 23:46:59 [127.0.0.1][-][-][error][yii\web\Session::open] session_start(): Cannot send session cache limiter - headers already sent (output started at /var/www/html/projetoyiiaula/vendor/yiisoft/yii2/web/Response.php:391)
+2017-05-12 23:46:59 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'site/index'
+]
+
+$_COOKIE = [
+    '_csrf' => 'e869d73164b0e4dd1f246f605bdc91b7f84074db7dd53bda34f47f0dab18c7aea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"z1YETl-iY6mycUbFZCDOuJJrC1nfbSXZ\";}'
+    'Phpstorm-f7d45158' => '7bfbf979-e7aa-4019-80c7-447d19156733'
+    'PHPSESSID' => '5hm1rfk5ldl4hrs0d0b5eioq3t'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/projetoyiiaula/web/index.php'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=e869d73164b0e4dd1f246f605bdc91b7f84074db7dd53bda34f47f0dab18c7aea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22z1YETl-iY6mycUbFZCDOuJJrC1nfbSXZ%22%3B%7D; Phpstorm-f7d45158=7bfbf979-e7aa-4019-80c7-447d19156733; PHPSESSID=5hm1rfk5ldl4hrs0d0b5eioq3t'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.25 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.25 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/projetoyiiaula/web/index.php'
+    'REMOTE_PORT' => '45520'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Findex'
+    'REQUEST_URI' => '/projetoyiiaula/web/index.php?r=site%2Findex'
+    'SCRIPT_NAME' => '/projetoyiiaula/web/index.php'
+    'PHP_SELF' => '/projetoyiiaula/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1494632819.754
+    'REQUEST_TIME' => 1494632819
+]
+2017-05-12 23:47:01 [127.0.0.1][-][-][error][ParseError] ParseError: syntax error, unexpected '}', expecting ',' or ';' in /var/www/html/projetoyiiaula/views/site/index.php:44
+Stack trace:
+#0 /var/www/html/projetoyiiaula/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/var/www/html/p...', Array)
+#1 /var/www/html/projetoyiiaula/vendor/yiisoft/yii2/base/View.php(152): yii\base\View->renderFile('/var/www/html/p...', Array, Object(app\controllers\SiteController))
+#2 /var/www/html/projetoyiiaula/vendor/yiisoft/yii2/base/Controller.php(381): yii\base\View->render('index', Array, Object(app\controllers\SiteController))
+#3 /var/www/html/projetoyiiaula/controllers/SiteController.php(72): yii\base\Controller->render('index', Array)
+#4 [internal function]: app\controllers\SiteController->actionIndex()
+#5 /var/www/html/projetoyiiaula/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#6 /var/www/html/projetoyiiaula/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#7 /var/www/html/projetoyiiaula/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('index', Array)
+#8 /var/www/html/projetoyiiaula/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('site/index', Array)
+#9 /var/www/html/projetoyiiaula/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 /var/www/html/projetoyiiaula/web/index.php(12): yii\base\Application->run()
+#11 {main}
+2017-05-12 23:47:01 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'site/index'
+]
+
+$_COOKIE = [
+    '_csrf' => 'e869d73164b0e4dd1f246f605bdc91b7f84074db7dd53bda34f47f0dab18c7aea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"z1YETl-iY6mycUbFZCDOuJJrC1nfbSXZ\";}'
+    'Phpstorm-f7d45158' => '7bfbf979-e7aa-4019-80c7-447d19156733'
+    'PHPSESSID' => '5hm1rfk5ldl4hrs0d0b5eioq3t'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/projetoyiiaula/web/index.php'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=e869d73164b0e4dd1f246f605bdc91b7f84074db7dd53bda34f47f0dab18c7aea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22z1YETl-iY6mycUbFZCDOuJJrC1nfbSXZ%22%3B%7D; Phpstorm-f7d45158=7bfbf979-e7aa-4019-80c7-447d19156733; PHPSESSID=5hm1rfk5ldl4hrs0d0b5eioq3t'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.25 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.25 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/projetoyiiaula/web/index.php'
+    'REMOTE_PORT' => '45522'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Findex'
+    'REQUEST_URI' => '/projetoyiiaula/web/index.php?r=site%2Findex'
+    'SCRIPT_NAME' => '/projetoyiiaula/web/index.php'
+    'PHP_SELF' => '/projetoyiiaula/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1494632821.967
+    'REQUEST_TIME' => 1494632821
+]
+2017-05-12 23:47:01 [127.0.0.1][-][-][error][yii\web\Session::open] session_start(): Cannot send session cache limiter - headers already sent (output started at /var/www/html/projetoyiiaula/vendor/yiisoft/yii2/web/Response.php:391)
+2017-05-12 23:47:01 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'site/index'
+]
+
+$_COOKIE = [
+    '_csrf' => 'e869d73164b0e4dd1f246f605bdc91b7f84074db7dd53bda34f47f0dab18c7aea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"z1YETl-iY6mycUbFZCDOuJJrC1nfbSXZ\";}'
+    'Phpstorm-f7d45158' => '7bfbf979-e7aa-4019-80c7-447d19156733'
+    'PHPSESSID' => '5hm1rfk5ldl4hrs0d0b5eioq3t'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/projetoyiiaula/web/index.php'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=e869d73164b0e4dd1f246f605bdc91b7f84074db7dd53bda34f47f0dab18c7aea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22z1YETl-iY6mycUbFZCDOuJJrC1nfbSXZ%22%3B%7D; Phpstorm-f7d45158=7bfbf979-e7aa-4019-80c7-447d19156733; PHPSESSID=5hm1rfk5ldl4hrs0d0b5eioq3t'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.25 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.25 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/projetoyiiaula/web/index.php'
+    'REMOTE_PORT' => '45522'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Findex'
+    'REQUEST_URI' => '/projetoyiiaula/web/index.php?r=site%2Findex'
+    'SCRIPT_NAME' => '/projetoyiiaula/web/index.php'
+    'PHP_SELF' => '/projetoyiiaula/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1494632821.967
+    'REQUEST_TIME' => 1494632821
+]
+2017-05-19 22:50:34 [127.0.0.1][-][-][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "index/about". in /var/www/html/projetoyiiaula/vendor/yiisoft/yii2/base/Module.php:532
+Stack trace:
+#0 /var/www/html/projetoyiiaula/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('index/about', Array)
+#1 /var/www/html/projetoyiiaula/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /var/www/html/projetoyiiaula/web/index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Página não encontrada. in /var/www/html/projetoyiiaula/vendor/yiisoft/yii2/web/Application.php:114
+Stack trace:
+#0 /var/www/html/projetoyiiaula/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /var/www/html/projetoyiiaula/web/index.php(12): yii\base\Application->run()
+#2 {main}
+2017-05-19 22:50:34 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'index/about'
+]
+
+$_COOKIE = [
+    '_csrf' => '7215b0662b575f64d3be46013361099a546586da84b5f031065de89a4205e20aa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"F8xuyD8ISBCWzN0JooFTLQvMJg9T6iv1\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:53.0) Gecko/20100101 Firefox/53.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/projetoyiiaula/web/'
+    'HTTP_COOKIE' => '_csrf=7215b0662b575f64d3be46013361099a546586da84b5f031065de89a4205e20aa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22F8xuyD8ISBCWzN0JooFTLQvMJg9T6iv1%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.25 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.25 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/projetoyiiaula/web/index.php'
+    'REMOTE_PORT' => '47242'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=index%2Fabout'
+    'REQUEST_URI' => '/projetoyiiaula/web/index.php?r=index%2Fabout'
+    'SCRIPT_NAME' => '/projetoyiiaula/web/index.php'
+    'PHP_SELF' => '/projetoyiiaula/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1495234234.834
+    'REQUEST_TIME' => 1495234234
+]
+2017-05-19 22:50:35 [127.0.0.1][-][-][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "index/contact". in /var/www/html/projetoyiiaula/vendor/yiisoft/yii2/base/Module.php:532
+Stack trace:
+#0 /var/www/html/projetoyiiaula/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('index/contact', Array)
+#1 /var/www/html/projetoyiiaula/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /var/www/html/projetoyiiaula/web/index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Página não encontrada. in /var/www/html/projetoyiiaula/vendor/yiisoft/yii2/web/Application.php:114
+Stack trace:
+#0 /var/www/html/projetoyiiaula/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /var/www/html/projetoyiiaula/web/index.php(12): yii\base\Application->run()
+#2 {main}
+2017-05-19 22:50:35 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'index/contact'
+]
+
+$_COOKIE = [
+    '_csrf' => '7215b0662b575f64d3be46013361099a546586da84b5f031065de89a4205e20aa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"F8xuyD8ISBCWzN0JooFTLQvMJg9T6iv1\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:53.0) Gecko/20100101 Firefox/53.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/projetoyiiaula/web/index.php?r=index%2Fabout'
+    'HTTP_COOKIE' => '_csrf=7215b0662b575f64d3be46013361099a546586da84b5f031065de89a4205e20aa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22F8xuyD8ISBCWzN0JooFTLQvMJg9T6iv1%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.25 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.25 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/projetoyiiaula/web/index.php'
+    'REMOTE_PORT' => '47242'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=index%2Fcontact'
+    'REQUEST_URI' => '/projetoyiiaula/web/index.php?r=index%2Fcontact'
+    'SCRIPT_NAME' => '/projetoyiiaula/web/index.php'
+    'PHP_SELF' => '/projetoyiiaula/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1495234235.769
+    'REQUEST_TIME' => 1495234235
+]
+2017-05-19 22:50:36 [127.0.0.1][-][-][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "index/index". in /var/www/html/projetoyiiaula/vendor/yiisoft/yii2/base/Module.php:532
+Stack trace:
+#0 /var/www/html/projetoyiiaula/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('index/index', Array)
+#1 /var/www/html/projetoyiiaula/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /var/www/html/projetoyiiaula/web/index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Página não encontrada. in /var/www/html/projetoyiiaula/vendor/yiisoft/yii2/web/Application.php:114
+Stack trace:
+#0 /var/www/html/projetoyiiaula/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /var/www/html/projetoyiiaula/web/index.php(12): yii\base\Application->run()
+#2 {main}
+2017-05-19 22:50:36 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'index/index'
+]
+
+$_COOKIE = [
+    '_csrf' => '7215b0662b575f64d3be46013361099a546586da84b5f031065de89a4205e20aa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"F8xuyD8ISBCWzN0JooFTLQvMJg9T6iv1\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:53.0) Gecko/20100101 Firefox/53.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/projetoyiiaula/web/index.php?r=index%2Fcontact'
+    'HTTP_COOKIE' => '_csrf=7215b0662b575f64d3be46013361099a546586da84b5f031065de89a4205e20aa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22F8xuyD8ISBCWzN0JooFTLQvMJg9T6iv1%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.25 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.25 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/projetoyiiaula/web/index.php'
+    'REMOTE_PORT' => '47242'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=index%2Findex'
+    'REQUEST_URI' => '/projetoyiiaula/web/index.php?r=index%2Findex'
+    'SCRIPT_NAME' => '/projetoyiiaula/web/index.php'
+    'PHP_SELF' => '/projetoyiiaula/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1495234236.706
+    'REQUEST_TIME' => 1495234236
+]
+2017-05-19 22:55:29 [127.0.0.1][-][-][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "index/about". in /var/www/html/projetoyiiaula/vendor/yiisoft/yii2/base/Module.php:532
+Stack trace:
+#0 /var/www/html/projetoyiiaula/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('index/about', Array)
+#1 /var/www/html/projetoyiiaula/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /var/www/html/projetoyiiaula/web/index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Página não encontrada. in /var/www/html/projetoyiiaula/vendor/yiisoft/yii2/web/Application.php:114
+Stack trace:
+#0 /var/www/html/projetoyiiaula/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /var/www/html/projetoyiiaula/web/index.php(12): yii\base\Application->run()
+#2 {main}
+2017-05-19 22:55:29 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'index/about'
+]
+
+$_COOKIE = [
+    '_csrf' => '7215b0662b575f64d3be46013361099a546586da84b5f031065de89a4205e20aa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"F8xuyD8ISBCWzN0JooFTLQvMJg9T6iv1\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:53.0) Gecko/20100101 Firefox/53.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/projetoyiiaula/web/'
+    'HTTP_COOKIE' => '_csrf=7215b0662b575f64d3be46013361099a546586da84b5f031065de89a4205e20aa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22F8xuyD8ISBCWzN0JooFTLQvMJg9T6iv1%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.25 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.25 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/projetoyiiaula/web/index.php'
+    'REMOTE_PORT' => '47306'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=index%2Fabout'
+    'REQUEST_URI' => '/projetoyiiaula/web/index.php?r=index%2Fabout'
+    'SCRIPT_NAME' => '/projetoyiiaula/web/index.php'
+    'PHP_SELF' => '/projetoyiiaula/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1495234529.418
+    'REQUEST_TIME' => 1495234529
+]
+2017-05-19 23:02:28 [127.0.0.1][-][-][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request: index/about in /var/www/html/projetoyiiaula/vendor/yiisoft/yii2/base/Controller.php:127
+Stack trace:
+#0 /var/www/html/projetoyiiaula/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('about', Array)
+#1 /var/www/html/projetoyiiaula/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('index/about', Array)
+#2 /var/www/html/projetoyiiaula/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 /var/www/html/projetoyiiaula/web/index.php(12): yii\base\Application->run()
+#4 {main}
+
+Next yii\web\NotFoundHttpException: Página não encontrada. in /var/www/html/projetoyiiaula/vendor/yiisoft/yii2/web/Application.php:114
+Stack trace:
+#0 /var/www/html/projetoyiiaula/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /var/www/html/projetoyiiaula/web/index.php(12): yii\base\Application->run()
+#2 {main}
+2017-05-19 23:02:28 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'index/about'
+]
+
+$_COOKIE = [
+    '_csrf' => '7215b0662b575f64d3be46013361099a546586da84b5f031065de89a4205e20aa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"F8xuyD8ISBCWzN0JooFTLQvMJg9T6iv1\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:53.0) Gecko/20100101 Firefox/53.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/projetoyiiaula/web/index.php?r=index%2Findex'
+    'HTTP_COOKIE' => '_csrf=7215b0662b575f64d3be46013361099a546586da84b5f031065de89a4205e20aa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22F8xuyD8ISBCWzN0JooFTLQvMJg9T6iv1%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.25 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.25 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/projetoyiiaula/web/index.php'
+    'REMOTE_PORT' => '47472'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=index%2Fabout'
+    'REQUEST_URI' => '/projetoyiiaula/web/index.php?r=index%2Fabout'
+    'SCRIPT_NAME' => '/projetoyiiaula/web/index.php'
+    'PHP_SELF' => '/projetoyiiaula/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1495234948.83
+    'REQUEST_TIME' => 1495234948
+]
+2017-05-19 23:02:31 [127.0.0.1][-][-][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request: index/about in /var/www/html/projetoyiiaula/vendor/yiisoft/yii2/base/Controller.php:127
+Stack trace:
+#0 /var/www/html/projetoyiiaula/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('about', Array)
+#1 /var/www/html/projetoyiiaula/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('index/about', Array)
+#2 /var/www/html/projetoyiiaula/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 /var/www/html/projetoyiiaula/web/index.php(12): yii\base\Application->run()
+#4 {main}
+
+Next yii\web\NotFoundHttpException: Página não encontrada. in /var/www/html/projetoyiiaula/vendor/yiisoft/yii2/web/Application.php:114
+Stack trace:
+#0 /var/www/html/projetoyiiaula/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /var/www/html/projetoyiiaula/web/index.php(12): yii\base\Application->run()
+#2 {main}
+2017-05-19 23:02:31 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'index/about'
+]
+
+$_COOKIE = [
+    '_csrf' => '7215b0662b575f64d3be46013361099a546586da84b5f031065de89a4205e20aa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"F8xuyD8ISBCWzN0JooFTLQvMJg9T6iv1\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:53.0) Gecko/20100101 Firefox/53.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/projetoyiiaula/web/index.php?r=index%2Fabout'
+    'HTTP_COOKIE' => '_csrf=7215b0662b575f64d3be46013361099a546586da84b5f031065de89a4205e20aa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22F8xuyD8ISBCWzN0JooFTLQvMJg9T6iv1%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.25 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.25 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/projetoyiiaula/web/index.php'
+    'REMOTE_PORT' => '47472'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=index%2Fabout'
+    'REQUEST_URI' => '/projetoyiiaula/web/index.php?r=index%2Fabout'
+    'SCRIPT_NAME' => '/projetoyiiaula/web/index.php'
+    'PHP_SELF' => '/projetoyiiaula/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1495234951.049
+    'REQUEST_TIME' => 1495234951
+]
+2017-05-19 23:02:31 [127.0.0.1][-][-][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request: index/contact in /var/www/html/projetoyiiaula/vendor/yiisoft/yii2/base/Controller.php:127
+Stack trace:
+#0 /var/www/html/projetoyiiaula/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('contact', Array)
+#1 /var/www/html/projetoyiiaula/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('index/contact', Array)
+#2 /var/www/html/projetoyiiaula/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 /var/www/html/projetoyiiaula/web/index.php(12): yii\base\Application->run()
+#4 {main}
+
+Next yii\web\NotFoundHttpException: Página não encontrada. in /var/www/html/projetoyiiaula/vendor/yiisoft/yii2/web/Application.php:114
+Stack trace:
+#0 /var/www/html/projetoyiiaula/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /var/www/html/projetoyiiaula/web/index.php(12): yii\base\Application->run()
+#2 {main}
+2017-05-19 23:02:31 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'index/contact'
+]
+
+$_COOKIE = [
+    '_csrf' => '7215b0662b575f64d3be46013361099a546586da84b5f031065de89a4205e20aa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"F8xuyD8ISBCWzN0JooFTLQvMJg9T6iv1\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:53.0) Gecko/20100101 Firefox/53.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/projetoyiiaula/web/index.php?r=index%2Fabout'
+    'HTTP_COOKIE' => '_csrf=7215b0662b575f64d3be46013361099a546586da84b5f031065de89a4205e20aa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22F8xuyD8ISBCWzN0JooFTLQvMJg9T6iv1%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.25 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.25 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/projetoyiiaula/web/index.php'
+    'REMOTE_PORT' => '47472'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=index%2Fcontact'
+    'REQUEST_URI' => '/projetoyiiaula/web/index.php?r=index%2Fcontact'
+    'SCRIPT_NAME' => '/projetoyiiaula/web/index.php'
+    'PHP_SELF' => '/projetoyiiaula/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1495234951.445
+    'REQUEST_TIME' => 1495234951
+]
+2017-05-19 23:59:09 [127.0.0.1][-][-][error][ArgumentCountError] ArgumentCountError: Too few arguments to function yii\db\BaseActiveRecord::findAll(), 0 passed in /var/www/html/projetoyiiaula/controllers/IndexController.php on line 16 and exactly 1 expected in /var/www/html/projetoyiiaula/vendor/yiisoft/yii2/db/BaseActiveRecord.php:114
+Stack trace:
+#0 /var/www/html/projetoyiiaula/controllers/IndexController.php(16): yii\db\BaseActiveRecord::findAll()
+#1 [internal function]: app\controllers\IndexController->actionIndex()
+#2 /var/www/html/projetoyiiaula/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#3 /var/www/html/projetoyiiaula/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#4 /var/www/html/projetoyiiaula/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('index', Array)
+#5 /var/www/html/projetoyiiaula/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('index/index', Array)
+#6 /var/www/html/projetoyiiaula/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 /var/www/html/projetoyiiaula/web/index.php(12): yii\base\Application->run()
+#8 {main}
+2017-05-19 23:59:09 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'index/index'
+]
+
+$_COOKIE = [
+    '_csrf' => '7215b0662b575f64d3be46013361099a546586da84b5f031065de89a4205e20aa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"F8xuyD8ISBCWzN0JooFTLQvMJg9T6iv1\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:53.0) Gecko/20100101 Firefox/53.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/projetoyiiaula/web/'
+    'HTTP_COOKIE' => '_csrf=7215b0662b575f64d3be46013361099a546586da84b5f031065de89a4205e20aa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22F8xuyD8ISBCWzN0JooFTLQvMJg9T6iv1%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.25 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.25 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/projetoyiiaula/web/index.php'
+    'REMOTE_PORT' => '49704'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=index%2Findex'
+    'REQUEST_URI' => '/projetoyiiaula/web/index.php?r=index%2Findex'
+    'SCRIPT_NAME' => '/projetoyiiaula/web/index.php'
+    'PHP_SELF' => '/projetoyiiaula/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1495238349.346
+    'REQUEST_TIME' => 1495238349
+]
+2017-05-19 23:59:34 [127.0.0.1][-][-][error][ArgumentCountError] ArgumentCountError: Too few arguments to function yii\db\BaseActiveRecord::findAll(), 0 passed in /var/www/html/projetoyiiaula/controllers/IndexController.php on line 16 and exactly 1 expected in /var/www/html/projetoyiiaula/vendor/yiisoft/yii2/db/BaseActiveRecord.php:114
+Stack trace:
+#0 /var/www/html/projetoyiiaula/controllers/IndexController.php(16): yii\db\BaseActiveRecord::findAll()
+#1 [internal function]: app\controllers\IndexController->actionIndex()
+#2 /var/www/html/projetoyiiaula/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#3 /var/www/html/projetoyiiaula/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#4 /var/www/html/projetoyiiaula/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('index', Array)
+#5 /var/www/html/projetoyiiaula/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('index/index', Array)
+#6 /var/www/html/projetoyiiaula/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 /var/www/html/projetoyiiaula/web/index.php(12): yii\base\Application->run()
+#8 {main}
+2017-05-19 23:59:34 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'index/index'
+]
+
+$_COOKIE = [
+    '_csrf' => '7215b0662b575f64d3be46013361099a546586da84b5f031065de89a4205e20aa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"F8xuyD8ISBCWzN0JooFTLQvMJg9T6iv1\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:53.0) Gecko/20100101 Firefox/53.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/projetoyiiaula/web/'
+    'HTTP_COOKIE' => '_csrf=7215b0662b575f64d3be46013361099a546586da84b5f031065de89a4205e20aa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22F8xuyD8ISBCWzN0JooFTLQvMJg9T6iv1%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.25 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.25 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/projetoyiiaula/web/index.php'
+    'REMOTE_PORT' => '49714'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=index%2Findex'
+    'REQUEST_URI' => '/projetoyiiaula/web/index.php?r=index%2Findex'
+    'SCRIPT_NAME' => '/projetoyiiaula/web/index.php'
+    'PHP_SELF' => '/projetoyiiaula/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1495238374.797
+    'REQUEST_TIME' => 1495238374
+]
+2017-05-20 00:00:13 [127.0.0.1][-][-][error][yii\base\ErrorException:8] yii\base\ErrorException: Undefined variable: posts in /var/www/html/projetoyiiaula/views/index/index.php:11
+Stack trace:
+#0 /var/www/html/projetoyiiaula/views/index/index.php(11): yii\base\ErrorHandler->handleError(8, 'Undefined varia...', '/var/www/html/p...', 11, Array)
+#1 /var/www/html/projetoyiiaula/vendor/yiisoft/yii2/base/View.php(328): require('/var/www/html/p...')
+#2 /var/www/html/projetoyiiaula/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/var/www/html/p...', Array)
+#3 /var/www/html/projetoyiiaula/vendor/yiisoft/yii2/base/View.php(152): yii\base\View->renderFile('/var/www/html/p...', Array, Object(app\controllers\IndexController))
+#4 /var/www/html/projetoyiiaula/vendor/yiisoft/yii2/base/Controller.php(381): yii\base\View->render('index', Array, Object(app\controllers\IndexController))
+#5 /var/www/html/projetoyiiaula/controllers/IndexController.php(21): yii\base\Controller->render('index', Array)
+#6 [internal function]: app\controllers\IndexController->actionIndex()
+#7 /var/www/html/projetoyiiaula/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#8 /var/www/html/projetoyiiaula/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#9 /var/www/html/projetoyiiaula/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('index', Array)
+#10 /var/www/html/projetoyiiaula/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('index/index', Array)
+#11 /var/www/html/projetoyiiaula/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 /var/www/html/projetoyiiaula/web/index.php(12): yii\base\Application->run()
+#13 {main}
+2017-05-20 00:00:13 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'index/index'
+]
+
+$_COOKIE = [
+    '_csrf' => '7215b0662b575f64d3be46013361099a546586da84b5f031065de89a4205e20aa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"F8xuyD8ISBCWzN0JooFTLQvMJg9T6iv1\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:53.0) Gecko/20100101 Firefox/53.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/projetoyiiaula/web/'
+    'HTTP_COOKIE' => '_csrf=7215b0662b575f64d3be46013361099a546586da84b5f031065de89a4205e20aa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22F8xuyD8ISBCWzN0JooFTLQvMJg9T6iv1%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.25 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.25 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/projetoyiiaula/web/index.php'
+    'REMOTE_PORT' => '49728'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=index%2Findex'
+    'REQUEST_URI' => '/projetoyiiaula/web/index.php?r=index%2Findex'
+    'SCRIPT_NAME' => '/projetoyiiaula/web/index.php'
+    'PHP_SELF' => '/projetoyiiaula/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1495238413.258
+    'REQUEST_TIME' => 1495238413
+]
+2017-05-20 00:00:40 [127.0.0.1][-][-][error][yii\base\ErrorException:8] yii\base\ErrorException: Undefined variable: posts in /var/www/html/projetoyiiaula/views/index/index.php:11
+Stack trace:
+#0 /var/www/html/projetoyiiaula/views/index/index.php(11): yii\base\ErrorHandler->handleError(8, 'Undefined varia...', '/var/www/html/p...', 11, Array)
+#1 /var/www/html/projetoyiiaula/vendor/yiisoft/yii2/base/View.php(328): require('/var/www/html/p...')
+#2 /var/www/html/projetoyiiaula/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/var/www/html/p...', Array)
+#3 /var/www/html/projetoyiiaula/vendor/yiisoft/yii2/base/View.php(152): yii\base\View->renderFile('/var/www/html/p...', Array, Object(app\controllers\IndexController))
+#4 /var/www/html/projetoyiiaula/vendor/yiisoft/yii2/base/Controller.php(381): yii\base\View->render('index', Array, Object(app\controllers\IndexController))
+#5 /var/www/html/projetoyiiaula/controllers/IndexController.php(21): yii\base\Controller->render('index', Array)
+#6 [internal function]: app\controllers\IndexController->actionIndex()
+#7 /var/www/html/projetoyiiaula/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#8 /var/www/html/projetoyiiaula/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#9 /var/www/html/projetoyiiaula/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('index', Array)
+#10 /var/www/html/projetoyiiaula/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('index/index', Array)
+#11 /var/www/html/projetoyiiaula/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 /var/www/html/projetoyiiaula/web/index.php(12): yii\base\Application->run()
+#13 {main}
+2017-05-20 00:00:39 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'index/index'
+]
+
+$_COOKIE = [
+    '_csrf' => '7215b0662b575f64d3be46013361099a546586da84b5f031065de89a4205e20aa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"F8xuyD8ISBCWzN0JooFTLQvMJg9T6iv1\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:53.0) Gecko/20100101 Firefox/53.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/projetoyiiaula/web/'
+    'HTTP_COOKIE' => '_csrf=7215b0662b575f64d3be46013361099a546586da84b5f031065de89a4205e20aa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22F8xuyD8ISBCWzN0JooFTLQvMJg9T6iv1%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.25 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.25 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/projetoyiiaula/web/index.php'
+    'REMOTE_PORT' => '49740'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=index%2Findex'
+    'REQUEST_URI' => '/projetoyiiaula/web/index.php?r=index%2Findex'
+    'SCRIPT_NAME' => '/projetoyiiaula/web/index.php'
+    'PHP_SELF' => '/projetoyiiaula/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1495238439.997
+    'REQUEST_TIME' => 1495238439
+]
+2017-05-20 00:00:40 [127.0.0.1][-][-][error][yii\base\ErrorException:8] yii\base\ErrorException: Undefined variable: posts in /var/www/html/projetoyiiaula/views/index/index.php:11
+Stack trace:
+#0 /var/www/html/projetoyiiaula/views/index/index.php(11): yii\base\ErrorHandler->handleError(8, 'Undefined varia...', '/var/www/html/p...', 11, Array)
+#1 /var/www/html/projetoyiiaula/vendor/yiisoft/yii2/base/View.php(328): require('/var/www/html/p...')
+#2 /var/www/html/projetoyiiaula/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/var/www/html/p...', Array)
+#3 /var/www/html/projetoyiiaula/vendor/yiisoft/yii2/base/View.php(152): yii\base\View->renderFile('/var/www/html/p...', Array, Object(app\controllers\IndexController))
+#4 /var/www/html/projetoyiiaula/vendor/yiisoft/yii2/base/Controller.php(381): yii\base\View->render('index', Array, Object(app\controllers\IndexController))
+#5 /var/www/html/projetoyiiaula/controllers/IndexController.php(21): yii\base\Controller->render('index', Array)
+#6 [internal function]: app\controllers\IndexController->actionIndex()
+#7 /var/www/html/projetoyiiaula/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#8 /var/www/html/projetoyiiaula/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#9 /var/www/html/projetoyiiaula/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('index', Array)
+#10 /var/www/html/projetoyiiaula/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('index/index', Array)
+#11 /var/www/html/projetoyiiaula/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 /var/www/html/projetoyiiaula/web/index.php(12): yii\base\Application->run()
+#13 {main}
+2017-05-20 00:00:40 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'index/index'
+]
+
+$_COOKIE = [
+    '_csrf' => '7215b0662b575f64d3be46013361099a546586da84b5f031065de89a4205e20aa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"F8xuyD8ISBCWzN0JooFTLQvMJg9T6iv1\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:53.0) Gecko/20100101 Firefox/53.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/projetoyiiaula/web/'
+    'HTTP_COOKIE' => '_csrf=7215b0662b575f64d3be46013361099a546586da84b5f031065de89a4205e20aa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22F8xuyD8ISBCWzN0JooFTLQvMJg9T6iv1%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.25 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.25 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/projetoyiiaula/web/index.php'
+    'REMOTE_PORT' => '49742'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=index%2Findex'
+    'REQUEST_URI' => '/projetoyiiaula/web/index.php?r=index%2Findex'
+    'SCRIPT_NAME' => '/projetoyiiaula/web/index.php'
+    'PHP_SELF' => '/projetoyiiaula/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1495238440.915
+    'REQUEST_TIME' => 1495238440
+]
+2017-05-20 00:01:02 [127.0.0.1][-][-][error][yii\base\ErrorException:8] yii\base\ErrorException: Undefined variable: posts in /var/www/html/projetoyiiaula/views/index/index.php:11
+Stack trace:
+#0 /var/www/html/projetoyiiaula/views/index/index.php(11): yii\base\ErrorHandler->handleError(8, 'Undefined varia...', '/var/www/html/p...', 11, Array)
+#1 /var/www/html/projetoyiiaula/vendor/yiisoft/yii2/base/View.php(328): require('/var/www/html/p...')
+#2 /var/www/html/projetoyiiaula/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/var/www/html/p...', Array)
+#3 /var/www/html/projetoyiiaula/vendor/yiisoft/yii2/base/View.php(152): yii\base\View->renderFile('/var/www/html/p...', Array, Object(app\controllers\IndexController))
+#4 /var/www/html/projetoyiiaula/vendor/yiisoft/yii2/base/Controller.php(381): yii\base\View->render('index', Array, Object(app\controllers\IndexController))
+#5 /var/www/html/projetoyiiaula/controllers/IndexController.php(23): yii\base\Controller->render('index', Array)
+#6 [internal function]: app\controllers\IndexController->actionIndex()
+#7 /var/www/html/projetoyiiaula/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#8 /var/www/html/projetoyiiaula/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#9 /var/www/html/projetoyiiaula/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('index', Array)
+#10 /var/www/html/projetoyiiaula/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('index/index', Array)
+#11 /var/www/html/projetoyiiaula/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 /var/www/html/projetoyiiaula/web/index.php(12): yii\base\Application->run()
+#13 {main}
+2017-05-20 00:01:02 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'index/index'
+]
+
+$_COOKIE = [
+    '_csrf' => '7215b0662b575f64d3be46013361099a546586da84b5f031065de89a4205e20aa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"F8xuyD8ISBCWzN0JooFTLQvMJg9T6iv1\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:53.0) Gecko/20100101 Firefox/53.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/projetoyiiaula/web/'
+    'HTTP_COOKIE' => '_csrf=7215b0662b575f64d3be46013361099a546586da84b5f031065de89a4205e20aa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22F8xuyD8ISBCWzN0JooFTLQvMJg9T6iv1%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.25 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.25 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/projetoyiiaula/web/index.php'
+    'REMOTE_PORT' => '49750'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=index%2Findex'
+    'REQUEST_URI' => '/projetoyiiaula/web/index.php?r=index%2Findex'
+    'SCRIPT_NAME' => '/projetoyiiaula/web/index.php'
+    'PHP_SELF' => '/projetoyiiaula/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1495238462.383
+    'REQUEST_TIME' => 1495238462
+]
+2017-05-20 00:01:02 [127.0.0.1][-][-][error][yii\base\ErrorException:8] yii\base\ErrorException: Undefined variable: posts in /var/www/html/projetoyiiaula/views/index/index.php:11
+Stack trace:
+#0 /var/www/html/projetoyiiaula/views/index/index.php(11): yii\base\ErrorHandler->handleError(8, 'Undefined varia...', '/var/www/html/p...', 11, Array)
+#1 /var/www/html/projetoyiiaula/vendor/yiisoft/yii2/base/View.php(328): require('/var/www/html/p...')
+#2 /var/www/html/projetoyiiaula/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/var/www/html/p...', Array)
+#3 /var/www/html/projetoyiiaula/vendor/yiisoft/yii2/base/View.php(152): yii\base\View->renderFile('/var/www/html/p...', Array, Object(app\controllers\IndexController))
+#4 /var/www/html/projetoyiiaula/vendor/yiisoft/yii2/base/Controller.php(381): yii\base\View->render('index', Array, Object(app\controllers\IndexController))
+#5 /var/www/html/projetoyiiaula/controllers/IndexController.php(23): yii\base\Controller->render('index', Array)
+#6 [internal function]: app\controllers\IndexController->actionIndex()
+#7 /var/www/html/projetoyiiaula/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#8 /var/www/html/projetoyiiaula/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#9 /var/www/html/projetoyiiaula/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('index', Array)
+#10 /var/www/html/projetoyiiaula/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('index/index', Array)
+#11 /var/www/html/projetoyiiaula/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 /var/www/html/projetoyiiaula/web/index.php(12): yii\base\Application->run()
+#13 {main}
+2017-05-20 00:01:02 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'index/index'
+]
+
+$_COOKIE = [
+    '_csrf' => '7215b0662b575f64d3be46013361099a546586da84b5f031065de89a4205e20aa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"F8xuyD8ISBCWzN0JooFTLQvMJg9T6iv1\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:53.0) Gecko/20100101 Firefox/53.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/projetoyiiaula/web/'
+    'HTTP_COOKIE' => '_csrf=7215b0662b575f64d3be46013361099a546586da84b5f031065de89a4205e20aa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22F8xuyD8ISBCWzN0JooFTLQvMJg9T6iv1%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.25 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.25 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/projetoyiiaula/web/index.php'
+    'REMOTE_PORT' => '49754'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=index%2Findex'
+    'REQUEST_URI' => '/projetoyiiaula/web/index.php?r=index%2Findex'
+    'SCRIPT_NAME' => '/projetoyiiaula/web/index.php'
+    'PHP_SELF' => '/projetoyiiaula/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1495238462.995
+    'REQUEST_TIME' => 1495238462
+]
+2017-05-20 00:03:51 [127.0.0.1][-][-][error][yii\db\Exception] PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'limit' in 'where clause' in /var/www/html/projetoyiiaula/vendor/yiisoft/yii2/db/Command.php:902
+Stack trace:
+#0 /var/www/html/projetoyiiaula/vendor/yiisoft/yii2/db/Command.php(902): PDOStatement->execute()
+#1 /var/www/html/projetoyiiaula/vendor/yiisoft/yii2/db/Command.php(362): yii\db\Command->queryInternal('fetchAll', NULL)
+#2 /var/www/html/projetoyiiaula/vendor/yiisoft/yii2/db/Query.php(213): yii\db\Command->queryAll()
+#3 /var/www/html/projetoyiiaula/vendor/yiisoft/yii2/db/ActiveQuery.php(133): yii\db\Query->all(NULL)
+#4 /var/www/html/projetoyiiaula/controllers/IndexController.php(16): yii\db\ActiveQuery->all()
+#5 [internal function]: app\controllers\IndexController->actionIndex()
+#6 /var/www/html/projetoyiiaula/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#7 /var/www/html/projetoyiiaula/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#8 /var/www/html/projetoyiiaula/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('index', Array)
+#9 /var/www/html/projetoyiiaula/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('index/index', Array)
+#10 /var/www/html/projetoyiiaula/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 /var/www/html/projetoyiiaula/web/index.php(12): yii\base\Application->run()
+#12 {main}
+
+Next yii\db\Exception: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'limit' in 'where clause'
+The SQL being executed was: SELECT * FROM `post` WHERE `limit`=2 in /var/www/html/projetoyiiaula/vendor/yiisoft/yii2/db/Schema.php:636
+Stack trace:
+#0 /var/www/html/projetoyiiaula/vendor/yiisoft/yii2/db/Command.php(917): yii\db\Schema->convertException(Object(PDOException), 'SELECT * FROM `...')
+#1 /var/www/html/projetoyiiaula/vendor/yiisoft/yii2/db/Command.php(362): yii\db\Command->queryInternal('fetchAll', NULL)
+#2 /var/www/html/projetoyiiaula/vendor/yiisoft/yii2/db/Query.php(213): yii\db\Command->queryAll()
+#3 /var/www/html/projetoyiiaula/vendor/yiisoft/yii2/db/ActiveQuery.php(133): yii\db\Query->all(NULL)
+#4 /var/www/html/projetoyiiaula/controllers/IndexController.php(16): yii\db\ActiveQuery->all()
+#5 [internal function]: app\controllers\IndexController->actionIndex()
+#6 /var/www/html/projetoyiiaula/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#7 /var/www/html/projetoyiiaula/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#8 /var/www/html/projetoyiiaula/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('index', Array)
+#9 /var/www/html/projetoyiiaula/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('index/index', Array)
+#10 /var/www/html/projetoyiiaula/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 /var/www/html/projetoyiiaula/web/index.php(12): yii\base\Application->run()
+#12 {main}
+Additional Information:
+Array
+(
+    [0] => 42S22
+    [1] => 1054
+    [2] => Unknown column 'limit' in 'where clause'
+)
+
+2017-05-20 00:03:51 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'index/index'
+]
+
+$_COOKIE = [
+    '_csrf' => '7215b0662b575f64d3be46013361099a546586da84b5f031065de89a4205e20aa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"F8xuyD8ISBCWzN0JooFTLQvMJg9T6iv1\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:53.0) Gecko/20100101 Firefox/53.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/projetoyiiaula/web/'
+    'HTTP_COOKIE' => '_csrf=7215b0662b575f64d3be46013361099a546586da84b5f031065de89a4205e20aa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22F8xuyD8ISBCWzN0JooFTLQvMJg9T6iv1%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.25 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.25 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/projetoyiiaula/web/index.php'
+    'REMOTE_PORT' => '49874'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=index%2Findex'
+    'REQUEST_URI' => '/projetoyiiaula/web/index.php?r=index%2Findex'
+    'SCRIPT_NAME' => '/projetoyiiaula/web/index.php'
+    'PHP_SELF' => '/projetoyiiaula/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1495238631.451
+    'REQUEST_TIME' => 1495238631
+]
+2017-05-20 00:04:13 [127.0.0.1][-][-][error][yii\base\ErrorException:8] yii\base\ErrorException: Trying to get property of non-object in /var/www/html/projetoyiiaula/views/index/index.php:12
+Stack trace:
+#0 /var/www/html/projetoyiiaula/views/index/index.php(12): yii\base\ErrorHandler->handleError(8, 'Trying to get p...', '/var/www/html/p...', 12, Array)
+#1 /var/www/html/projetoyiiaula/vendor/yiisoft/yii2/base/View.php(328): require('/var/www/html/p...')
+#2 /var/www/html/projetoyiiaula/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/var/www/html/p...', Array)
+#3 /var/www/html/projetoyiiaula/vendor/yiisoft/yii2/base/View.php(152): yii\base\View->renderFile('/var/www/html/p...', Array, Object(app\controllers\IndexController))
+#4 /var/www/html/projetoyiiaula/vendor/yiisoft/yii2/base/Controller.php(381): yii\base\View->render('index', Array, Object(app\controllers\IndexController))
+#5 /var/www/html/projetoyiiaula/controllers/IndexController.php(25): yii\base\Controller->render('index', Array)
+#6 [internal function]: app\controllers\IndexController->actionIndex()
+#7 /var/www/html/projetoyiiaula/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#8 /var/www/html/projetoyiiaula/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#9 /var/www/html/projetoyiiaula/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('index', Array)
+#10 /var/www/html/projetoyiiaula/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('index/index', Array)
+#11 /var/www/html/projetoyiiaula/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 /var/www/html/projetoyiiaula/web/index.php(12): yii\base\Application->run()
+#13 {main}
+2017-05-20 00:04:13 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'index/index'
+]
+
+$_COOKIE = [
+    '_csrf' => '7215b0662b575f64d3be46013361099a546586da84b5f031065de89a4205e20aa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"F8xuyD8ISBCWzN0JooFTLQvMJg9T6iv1\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:53.0) Gecko/20100101 Firefox/53.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/projetoyiiaula/web/'
+    'HTTP_COOKIE' => '_csrf=7215b0662b575f64d3be46013361099a546586da84b5f031065de89a4205e20aa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22F8xuyD8ISBCWzN0JooFTLQvMJg9T6iv1%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.25 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.25 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/projetoyiiaula/web/index.php'
+    'REMOTE_PORT' => '49884'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=index%2Findex'
+    'REQUEST_URI' => '/projetoyiiaula/web/index.php?r=index%2Findex'
+    'SCRIPT_NAME' => '/projetoyiiaula/web/index.php'
+    'PHP_SELF' => '/projetoyiiaula/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1495238653.622
+    'REQUEST_TIME' => 1495238653
+]
+2017-05-20 00:04:15 [127.0.0.1][-][-][error][yii\base\ErrorException:8] yii\base\ErrorException: Trying to get property of non-object in /var/www/html/projetoyiiaula/views/index/index.php:12
+Stack trace:
+#0 /var/www/html/projetoyiiaula/views/index/index.php(12): yii\base\ErrorHandler->handleError(8, 'Trying to get p...', '/var/www/html/p...', 12, Array)
+#1 /var/www/html/projetoyiiaula/vendor/yiisoft/yii2/base/View.php(328): require('/var/www/html/p...')
+#2 /var/www/html/projetoyiiaula/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/var/www/html/p...', Array)
+#3 /var/www/html/projetoyiiaula/vendor/yiisoft/yii2/base/View.php(152): yii\base\View->renderFile('/var/www/html/p...', Array, Object(app\controllers\IndexController))
+#4 /var/www/html/projetoyiiaula/vendor/yiisoft/yii2/base/Controller.php(381): yii\base\View->render('index', Array, Object(app\controllers\IndexController))
+#5 /var/www/html/projetoyiiaula/controllers/IndexController.php(25): yii\base\Controller->render('index', Array)
+#6 [internal function]: app\controllers\IndexController->actionIndex()
+#7 /var/www/html/projetoyiiaula/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#8 /var/www/html/projetoyiiaula/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#9 /var/www/html/projetoyiiaula/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('index', Array)
+#10 /var/www/html/projetoyiiaula/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('index/index', Array)
+#11 /var/www/html/projetoyiiaula/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 /var/www/html/projetoyiiaula/web/index.php(12): yii\base\Application->run()
+#13 {main}
+2017-05-20 00:04:15 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'index/index'
+]
+
+$_COOKIE = [
+    '_csrf' => '7215b0662b575f64d3be46013361099a546586da84b5f031065de89a4205e20aa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"F8xuyD8ISBCWzN0JooFTLQvMJg9T6iv1\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:53.0) Gecko/20100101 Firefox/53.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/projetoyiiaula/web/'
+    'HTTP_COOKIE' => '_csrf=7215b0662b575f64d3be46013361099a546586da84b5f031065de89a4205e20aa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22F8xuyD8ISBCWzN0JooFTLQvMJg9T6iv1%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.25 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.25 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/projetoyiiaula/web/index.php'
+    'REMOTE_PORT' => '49886'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=index%2Findex'
+    'REQUEST_URI' => '/projetoyiiaula/web/index.php?r=index%2Findex'
+    'SCRIPT_NAME' => '/projetoyiiaula/web/index.php'
+    'PHP_SELF' => '/projetoyiiaula/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1495238655.197
+    'REQUEST_TIME' => 1495238655
+]
+2017-05-20 00:04:20 [127.0.0.1][-][-][error][yii\base\ErrorException:8] yii\base\ErrorException: Trying to get property of non-object in /var/www/html/projetoyiiaula/views/index/index.php:12
+Stack trace:
+#0 /var/www/html/projetoyiiaula/views/index/index.php(12): yii\base\ErrorHandler->handleError(8, 'Trying to get p...', '/var/www/html/p...', 12, Array)
+#1 /var/www/html/projetoyiiaula/vendor/yiisoft/yii2/base/View.php(328): require('/var/www/html/p...')
+#2 /var/www/html/projetoyiiaula/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/var/www/html/p...', Array)
+#3 /var/www/html/projetoyiiaula/vendor/yiisoft/yii2/base/View.php(152): yii\base\View->renderFile('/var/www/html/p...', Array, Object(app\controllers\IndexController))
+#4 /var/www/html/projetoyiiaula/vendor/yiisoft/yii2/base/Controller.php(381): yii\base\View->render('index', Array, Object(app\controllers\IndexController))
+#5 /var/www/html/projetoyiiaula/controllers/IndexController.php(25): yii\base\Controller->render('index', Array)
+#6 [internal function]: app\controllers\IndexController->actionIndex()
+#7 /var/www/html/projetoyiiaula/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#8 /var/www/html/projetoyiiaula/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#9 /var/www/html/projetoyiiaula/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('index', Array)
+#10 /var/www/html/projetoyiiaula/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('index/index', Array)
+#11 /var/www/html/projetoyiiaula/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 /var/www/html/projetoyiiaula/web/index.php(12): yii\base\Application->run()
+#13 {main}
+2017-05-20 00:04:20 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'index/index'
+]
+
+$_COOKIE = [
+    '_csrf' => '7215b0662b575f64d3be46013361099a546586da84b5f031065de89a4205e20aa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"F8xuyD8ISBCWzN0JooFTLQvMJg9T6iv1\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:53.0) Gecko/20100101 Firefox/53.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/projetoyiiaula/web/'
+    'HTTP_COOKIE' => '_csrf=7215b0662b575f64d3be46013361099a546586da84b5f031065de89a4205e20aa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22F8xuyD8ISBCWzN0JooFTLQvMJg9T6iv1%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.25 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.25 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/projetoyiiaula/web/index.php'
+    'REMOTE_PORT' => '49890'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=index%2Findex'
+    'REQUEST_URI' => '/projetoyiiaula/web/index.php?r=index%2Findex'
+    'SCRIPT_NAME' => '/projetoyiiaula/web/index.php'
+    'PHP_SELF' => '/projetoyiiaula/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1495238660.517
+    'REQUEST_TIME' => 1495238660
+]
+2017-05-26 23:07:56 [127.0.0.1][-][-][error][yii\base\UnknownPropertyException] yii\base\UnknownPropertyException: Getting unknown property: app\models\Product::name in /var/www/html/projetoyiiaula/vendor/yiisoft/yii2/base/Component.php:147
+Stack trace:
+#0 /var/www/html/projetoyiiaula/vendor/yiisoft/yii2/db/BaseActiveRecord.php(286): yii\base\Component->__get('name')
+#1 /var/www/html/projetoyiiaula/views/product/index.php(8): yii\db\BaseActiveRecord->__get('name')
+#2 /var/www/html/projetoyiiaula/vendor/yiisoft/yii2/base/View.php(328): require('/var/www/html/p...')
+#3 /var/www/html/projetoyiiaula/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/var/www/html/p...', Array)
+#4 /var/www/html/projetoyiiaula/vendor/yiisoft/yii2/base/View.php(152): yii\base\View->renderFile('/var/www/html/p...', Array, Object(app\controllers\ProductController))
+#5 /var/www/html/projetoyiiaula/vendor/yiisoft/yii2/base/Controller.php(381): yii\base\View->render('index', Array, Object(app\controllers\ProductController))
+#6 /var/www/html/projetoyiiaula/controllers/ProductController.php(11): yii\base\Controller->render('index', Array)
+#7 [internal function]: app\controllers\ProductController->actionIndex()
+#8 /var/www/html/projetoyiiaula/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#9 /var/www/html/projetoyiiaula/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#10 /var/www/html/projetoyiiaula/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('', Array)
+#11 /var/www/html/projetoyiiaula/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('product', Array)
+#12 /var/www/html/projetoyiiaula/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#13 /var/www/html/projetoyiiaula/web/index.php(12): yii\base\Application->run()
+#14 {main}
+2017-05-26 23:07:56 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'product'
+]
+
+$_COOKIE = [
+    'Phpstorm-f7d45158' => '7bfbf979-e7aa-4019-80c7-447d19156733'
+    '_csrf' => 'e297e3f22039d1930f245d02bd29e9d830fc878a6b4d4dfdbb813f0184f44fe5a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"7VxKoTMAMqRp_OcKDcVRIvAAJ1HlqNja\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => 'Phpstorm-f7d45158=7bfbf979-e7aa-4019-80c7-447d19156733; _csrf=e297e3f22039d1930f245d02bd29e9d830fc878a6b4d4dfdbb813f0184f44fe5a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%227VxKoTMAMqRp_OcKDcVRIvAAJ1HlqNja%22%3B%7D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.25 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.25 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/projetoyiiaula/web/index.php'
+    'REMOTE_PORT' => '40640'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=product'
+    'REQUEST_URI' => '/projetoyiiaula/web/index.php?r=product'
+    'SCRIPT_NAME' => '/projetoyiiaula/web/index.php'
+    'PHP_SELF' => '/projetoyiiaula/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1495840076.906
+    'REQUEST_TIME' => 1495840076
+]
+2017-05-26 23:08:02 [127.0.0.1][-][-][error][yii\base\UnknownPropertyException] yii\base\UnknownPropertyException: Getting unknown property: app\models\Product::title in /var/www/html/projetoyiiaula/vendor/yiisoft/yii2/base/Component.php:147
+Stack trace:
+#0 /var/www/html/projetoyiiaula/vendor/yiisoft/yii2/db/BaseActiveRecord.php(286): yii\base\Component->__get('title')
+#1 /var/www/html/projetoyiiaula/views/product/index.php(8): yii\db\BaseActiveRecord->__get('title')
+#2 /var/www/html/projetoyiiaula/vendor/yiisoft/yii2/base/View.php(328): require('/var/www/html/p...')
+#3 /var/www/html/projetoyiiaula/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/var/www/html/p...', Array)
+#4 /var/www/html/projetoyiiaula/vendor/yiisoft/yii2/base/View.php(152): yii\base\View->renderFile('/var/www/html/p...', Array, Object(app\controllers\ProductController))
+#5 /var/www/html/projetoyiiaula/vendor/yiisoft/yii2/base/Controller.php(381): yii\base\View->render('index', Array, Object(app\controllers\ProductController))
+#6 /var/www/html/projetoyiiaula/controllers/ProductController.php(11): yii\base\Controller->render('index', Array)
+#7 [internal function]: app\controllers\ProductController->actionIndex()
+#8 /var/www/html/projetoyiiaula/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#9 /var/www/html/projetoyiiaula/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#10 /var/www/html/projetoyiiaula/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('', Array)
+#11 /var/www/html/projetoyiiaula/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('product', Array)
+#12 /var/www/html/projetoyiiaula/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#13 /var/www/html/projetoyiiaula/web/index.php(12): yii\base\Application->run()
+#14 {main}
+2017-05-26 23:08:02 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'product'
+]
+
+$_COOKIE = [
+    'Phpstorm-f7d45158' => '7bfbf979-e7aa-4019-80c7-447d19156733'
+    '_csrf' => 'e297e3f22039d1930f245d02bd29e9d830fc878a6b4d4dfdbb813f0184f44fe5a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"7VxKoTMAMqRp_OcKDcVRIvAAJ1HlqNja\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => 'Phpstorm-f7d45158=7bfbf979-e7aa-4019-80c7-447d19156733; _csrf=e297e3f22039d1930f245d02bd29e9d830fc878a6b4d4dfdbb813f0184f44fe5a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%227VxKoTMAMqRp_OcKDcVRIvAAJ1HlqNja%22%3B%7D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.25 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.25 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/projetoyiiaula/web/index.php'
+    'REMOTE_PORT' => '40644'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=product'
+    'REQUEST_URI' => '/projetoyiiaula/web/index.php?r=product'
+    'SCRIPT_NAME' => '/projetoyiiaula/web/index.php'
+    'PHP_SELF' => '/projetoyiiaula/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1495840082.122
+    'REQUEST_TIME' => 1495840082
+]
+2017-07-28 23:26:59 [::1][-][-][error][yii\db\Exception] PDOException: SQLSTATE[HY000] [1049] Unknown database 'yii2aula' in /home/william/www/projetoyiiaula/vendor/yiisoft/yii2/db/Connection.php:630
+Stack trace:
+#0 /home/william/www/projetoyiiaula/vendor/yiisoft/yii2/db/Connection.php(630): PDO->__construct('mysql:host=loca...', 'root', 'root', NULL)
+#1 /home/william/www/projetoyiiaula/vendor/yiisoft/yii2/db/Connection.php(563): yii\db\Connection->createPdoInstance()
+#2 /home/william/www/projetoyiiaula/vendor/yiisoft/yii2/db/Connection.php(896): yii\db\Connection->open()
+#3 /home/william/www/projetoyiiaula/vendor/yiisoft/yii2/db/Connection.php(883): yii\db\Connection->getMasterPdo()
+#4 /home/william/www/projetoyiiaula/vendor/yiisoft/yii2/db/Command.php(219): yii\db\Connection->getSlavePdo()
+#5 /home/william/www/projetoyiiaula/vendor/yiisoft/yii2/db/Command.php(896): yii\db\Command->prepare(true)
+#6 /home/william/www/projetoyiiaula/vendor/yiisoft/yii2/db/Command.php(362): yii\db\Command->queryInternal('fetchAll', NULL)
+#7 /home/william/www/projetoyiiaula/vendor/yiisoft/yii2/db/Query.php(213): yii\db\Command->queryAll()
+#8 /home/william/www/projetoyiiaula/vendor/yiisoft/yii2/db/ActiveQuery.php(133): yii\db\Query->all(NULL)
+#9 /home/william/www/projetoyiiaula/controllers/IndexController.php(16): yii\db\ActiveQuery->all()
+#10 [internal function]: app\controllers\IndexController->actionIndex()
+#11 /home/william/www/projetoyiiaula/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#12 /home/william/www/projetoyiiaula/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#13 /home/william/www/projetoyiiaula/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('index', Array)
+#14 /home/william/www/projetoyiiaula/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('index/index', Array)
+#15 /home/william/www/projetoyiiaula/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#16 /home/william/www/projetoyiiaula/web/index.php(12): yii\base\Application->run()
+#17 {main}
+
+Next yii\db\Exception: SQLSTATE[HY000] [1049] Unknown database 'yii2aula' in /home/william/www/projetoyiiaula/vendor/yiisoft/yii2/db/Connection.php:568
+Stack trace:
+#0 /home/william/www/projetoyiiaula/vendor/yiisoft/yii2/db/Connection.php(896): yii\db\Connection->open()
+#1 /home/william/www/projetoyiiaula/vendor/yiisoft/yii2/db/Connection.php(883): yii\db\Connection->getMasterPdo()
+#2 /home/william/www/projetoyiiaula/vendor/yiisoft/yii2/db/Command.php(219): yii\db\Connection->getSlavePdo()
+#3 /home/william/www/projetoyiiaula/vendor/yiisoft/yii2/db/Command.php(896): yii\db\Command->prepare(true)
+#4 /home/william/www/projetoyiiaula/vendor/yiisoft/yii2/db/Command.php(362): yii\db\Command->queryInternal('fetchAll', NULL)
+#5 /home/william/www/projetoyiiaula/vendor/yiisoft/yii2/db/Query.php(213): yii\db\Command->queryAll()
+#6 /home/william/www/projetoyiiaula/vendor/yiisoft/yii2/db/ActiveQuery.php(133): yii\db\Query->all(NULL)
+#7 /home/william/www/projetoyiiaula/controllers/IndexController.php(16): yii\db\ActiveQuery->all()
+#8 [internal function]: app\controllers\IndexController->actionIndex()
+#9 /home/william/www/projetoyiiaula/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#10 /home/william/www/projetoyiiaula/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#11 /home/william/www/projetoyiiaula/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('index', Array)
+#12 /home/william/www/projetoyiiaula/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('index/index', Array)
+#13 /home/william/www/projetoyiiaula/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#14 /home/william/www/projetoyiiaula/web/index.php(12): yii\base\Application->run()
+#15 {main}
+Additional Information:
+
+2017-07-28 23:26:59 [::1][-][-][info][application] $_GET = [
+    'r' => 'index/index'
+]
+
+$_COOKIE = [
+    '_csrf' => '89f9185073b41952c7a66f0969f3968da51ee28c57fbd13cf583d9766956a5f2a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"XHkgeqIe3WOarTJbpWfljOvizWEMcEET\";}'
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'WXvIQxYtMdgXKBJ63DVPaQAAAAE'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Fedora; Linux x86_64; rv:54.0) Gecko/20100101 Firefox/54.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/projetoyiiaula/web/index.php?r=index%2Fsobre'
+    'HTTP_COOKIE' => '_csrf=89f9185073b41952c7a66f0969f3968da51ee28c57fbd13cf583d9766956a5f2a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22XHkgeqIe3WOarTJbpWfljOvizWEMcEET%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.27 (Fedora) PHP/7.1.7'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/home/william/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/home/william/www'
+    'SERVER_ADMIN' => 'root@localhost'
+    'SCRIPT_FILENAME' => '/home/william/www/projetoyiiaula/web/index.php'
+    'REMOTE_PORT' => '38336'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=index%2Findex'
+    'REQUEST_URI' => '/projetoyiiaula/web/index.php?r=index%2Findex'
+    'SCRIPT_NAME' => '/projetoyiiaula/web/index.php'
+    'PHP_SELF' => '/projetoyiiaula/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1501284419.056
+    'REQUEST_TIME' => 1501284419
+]
+2017-07-28 23:27:06 [::1][-][-][error][yii\db\Exception] PDOException: SQLSTATE[HY000] [1049] Unknown database 'yii2aula' in /home/william/www/projetoyiiaula/vendor/yiisoft/yii2/db/Connection.php:630
+Stack trace:
+#0 /home/william/www/projetoyiiaula/vendor/yiisoft/yii2/db/Connection.php(630): PDO->__construct('mysql:host=loca...', 'root', 'root', NULL)
+#1 /home/william/www/projetoyiiaula/vendor/yiisoft/yii2/db/Connection.php(563): yii\db\Connection->createPdoInstance()
+#2 /home/william/www/projetoyiiaula/vendor/yiisoft/yii2/db/Connection.php(896): yii\db\Connection->open()
+#3 /home/william/www/projetoyiiaula/vendor/yiisoft/yii2/db/Connection.php(883): yii\db\Connection->getMasterPdo()
+#4 /home/william/www/projetoyiiaula/vendor/yiisoft/yii2/db/Command.php(219): yii\db\Connection->getSlavePdo()
+#5 /home/william/www/projetoyiiaula/vendor/yiisoft/yii2/db/Command.php(896): yii\db\Command->prepare(true)
+#6 /home/william/www/projetoyiiaula/vendor/yiisoft/yii2/db/Command.php(362): yii\db\Command->queryInternal('fetchAll', NULL)
+#7 /home/william/www/projetoyiiaula/vendor/yiisoft/yii2/db/mysql/Schema.php(199): yii\db\Command->queryAll()
+#8 /home/william/www/projetoyiiaula/vendor/yiisoft/yii2/db/mysql/Schema.php(98): yii\db\mysql\Schema->findColumns(Object(yii\db\TableSchema))
+#9 /home/william/www/projetoyiiaula/vendor/yiisoft/yii2/db/Schema.php(152): yii\db\mysql\Schema->loadTableSchema('post')
+#10 /home/william/www/projetoyiiaula/vendor/yiisoft/yii2/db/ActiveRecord.php(330): yii\db\Schema->getTableSchema('post')
+#11 /home/william/www/projetoyiiaula/vendor/yiisoft/yii2/db/ActiveRecord.php(364): yii\db\ActiveRecord::getTableSchema()
+#12 /home/william/www/projetoyiiaula/vendor/yiisoft/yii2/db/BaseActiveRecord.php(464): yii\db\ActiveRecord->attributes()
+#13 /home/william/www/projetoyiiaula/vendor/yiisoft/yii2/db/BaseActiveRecord.php(280): yii\db\BaseActiveRecord->hasAttribute('idpost')
+#14 /home/william/www/projetoyiiaula/vendor/yiisoft/yii2/validators/Validator.php(264): yii\db\BaseActiveRecord->__get('idpost')
+#15 /home/william/www/projetoyiiaula/vendor/yiisoft/yii2/base/Model.php(358): yii\validators\Validator->validateAttributes(Object(app\models\PostSearch), Array)
+#16 /home/william/www/projetoyiiaula/models/PostSearch.php(54): yii\base\Model->validate()
+#17 /home/william/www/projetoyiiaula/controllers/PostController.php(40): app\models\PostSearch->search(Array)
+#18 [internal function]: app\controllers\PostController->actionIndex()
+#19 /home/william/www/projetoyiiaula/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#20 /home/william/www/projetoyiiaula/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#21 /home/william/www/projetoyiiaula/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('index', Array)
+#22 /home/william/www/projetoyiiaula/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('post/index', Array)
+#23 /home/william/www/projetoyiiaula/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#24 /home/william/www/projetoyiiaula/web/index.php(12): yii\base\Application->run()
+#25 {main}
+
+Next yii\db\Exception: SQLSTATE[HY000] [1049] Unknown database 'yii2aula' in /home/william/www/projetoyiiaula/vendor/yiisoft/yii2/db/Connection.php:568
+Stack trace:
+#0 /home/william/www/projetoyiiaula/vendor/yiisoft/yii2/db/Connection.php(896): yii\db\Connection->open()
+#1 /home/william/www/projetoyiiaula/vendor/yiisoft/yii2/db/Connection.php(883): yii\db\Connection->getMasterPdo()
+#2 /home/william/www/projetoyiiaula/vendor/yiisoft/yii2/db/Command.php(219): yii\db\Connection->getSlavePdo()
+#3 /home/william/www/projetoyiiaula/vendor/yiisoft/yii2/db/Command.php(896): yii\db\Command->prepare(true)
+#4 /home/william/www/projetoyiiaula/vendor/yiisoft/yii2/db/Command.php(362): yii\db\Command->queryInternal('fetchAll', NULL)
+#5 /home/william/www/projetoyiiaula/vendor/yiisoft/yii2/db/mysql/Schema.php(199): yii\db\Command->queryAll()
+#6 /home/william/www/projetoyiiaula/vendor/yiisoft/yii2/db/mysql/Schema.php(98): yii\db\mysql\Schema->findColumns(Object(yii\db\TableSchema))
+#7 /home/william/www/projetoyiiaula/vendor/yiisoft/yii2/db/Schema.php(152): yii\db\mysql\Schema->loadTableSchema('post')
+#8 /home/william/www/projetoyiiaula/vendor/yiisoft/yii2/db/ActiveRecord.php(330): yii\db\Schema->getTableSchema('post')
+#9 /home/william/www/projetoyiiaula/vendor/yiisoft/yii2/db/ActiveRecord.php(364): yii\db\ActiveRecord::getTableSchema()
+#10 /home/william/www/projetoyiiaula/vendor/yiisoft/yii2/db/BaseActiveRecord.php(464): yii\db\ActiveRecord->attributes()
+#11 /home/william/www/projetoyiiaula/vendor/yiisoft/yii2/db/BaseActiveRecord.php(280): yii\db\BaseActiveRecord->hasAttribute('idpost')
+#12 /home/william/www/projetoyiiaula/vendor/yiisoft/yii2/validators/Validator.php(264): yii\db\BaseActiveRecord->__get('idpost')
+#13 /home/william/www/projetoyiiaula/vendor/yiisoft/yii2/base/Model.php(358): yii\validators\Validator->validateAttributes(Object(app\models\PostSearch), Array)
+#14 /home/william/www/projetoyiiaula/models/PostSearch.php(54): yii\base\Model->validate()
+#15 /home/william/www/projetoyiiaula/controllers/PostController.php(40): app\models\PostSearch->search(Array)
+#16 [internal function]: app\controllers\PostController->actionIndex()
+#17 /home/william/www/projetoyiiaula/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#18 /home/william/www/projetoyiiaula/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#19 /home/william/www/projetoyiiaula/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('index', Array)
+#20 /home/william/www/projetoyiiaula/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('post/index', Array)
+#21 /home/william/www/projetoyiiaula/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#22 /home/william/www/projetoyiiaula/web/index.php(12): yii\base\Application->run()
+#23 {main}
+Additional Information:
+
+2017-07-28 23:27:06 [::1][-][-][info][application] $_GET = [
+    'r' => 'post/index'
+]
+
+$_COOKIE = [
+    '_csrf' => '89f9185073b41952c7a66f0969f3968da51ee28c57fbd13cf583d9766956a5f2a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"XHkgeqIe3WOarTJbpWfljOvizWEMcEET\";}'
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'WXvIStIi6aC3s2Jh6k0r5QAAAAM'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Fedora; Linux x86_64; rv:54.0) Gecko/20100101 Firefox/54.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/projetoyiiaula/web/index.php?r=index%2Fcontato'
+    'HTTP_COOKIE' => '_csrf=89f9185073b41952c7a66f0969f3968da51ee28c57fbd13cf583d9766956a5f2a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22XHkgeqIe3WOarTJbpWfljOvizWEMcEET%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.27 (Fedora) PHP/7.1.7'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/home/william/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/home/william/www'
+    'SERVER_ADMIN' => 'root@localhost'
+    'SCRIPT_FILENAME' => '/home/william/www/projetoyiiaula/web/index.php'
+    'REMOTE_PORT' => '38344'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=post%2Findex'
+    'REQUEST_URI' => '/projetoyiiaula/web/index.php?r=post%2Findex'
+    'SCRIPT_NAME' => '/projetoyiiaula/web/index.php'
+    'PHP_SELF' => '/projetoyiiaula/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1501284426.642
+    'REQUEST_TIME' => 1501284426
+]
+2017-07-28 23:30:01 [::1][-][-][error][yii\db\Exception] PDOException: SQLSTATE[HY000] [1049] Unknown database 'yii2aula' in /home/william/www/projetoyiiaula/vendor/yiisoft/yii2/db/Connection.php:630
+Stack trace:
+#0 /home/william/www/projetoyiiaula/vendor/yiisoft/yii2/db/Connection.php(630): PDO->__construct('mysql:host=loca...', 'root', 'root', NULL)
+#1 /home/william/www/projetoyiiaula/vendor/yiisoft/yii2/db/Connection.php(563): yii\db\Connection->createPdoInstance()
+#2 /home/william/www/projetoyiiaula/vendor/yiisoft/yii2/db/Connection.php(896): yii\db\Connection->open()
+#3 /home/william/www/projetoyiiaula/vendor/yiisoft/yii2/db/Connection.php(883): yii\db\Connection->getMasterPdo()
+#4 /home/william/www/projetoyiiaula/vendor/yiisoft/yii2/db/Command.php(219): yii\db\Connection->getSlavePdo()
+#5 /home/william/www/projetoyiiaula/vendor/yiisoft/yii2/db/Command.php(896): yii\db\Command->prepare(true)
+#6 /home/william/www/projetoyiiaula/vendor/yiisoft/yii2/db/Command.php(362): yii\db\Command->queryInternal('fetchAll', NULL)
+#7 /home/william/www/projetoyiiaula/vendor/yiisoft/yii2/db/Query.php(213): yii\db\Command->queryAll()
+#8 /home/william/www/projetoyiiaula/vendor/yiisoft/yii2/db/ActiveQuery.php(133): yii\db\Query->all(NULL)
+#9 /home/william/www/projetoyiiaula/controllers/IndexController.php(16): yii\db\ActiveQuery->all()
+#10 [internal function]: app\controllers\IndexController->actionIndex()
+#11 /home/william/www/projetoyiiaula/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#12 /home/william/www/projetoyiiaula/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#13 /home/william/www/projetoyiiaula/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('index', Array)
+#14 /home/william/www/projetoyiiaula/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('index/index', Array)
+#15 /home/william/www/projetoyiiaula/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#16 /home/william/www/projetoyiiaula/web/index.php(12): yii\base\Application->run()
+#17 {main}
+
+Next yii\db\Exception: SQLSTATE[HY000] [1049] Unknown database 'yii2aula' in /home/william/www/projetoyiiaula/vendor/yiisoft/yii2/db/Connection.php:568
+Stack trace:
+#0 /home/william/www/projetoyiiaula/vendor/yiisoft/yii2/db/Connection.php(896): yii\db\Connection->open()
+#1 /home/william/www/projetoyiiaula/vendor/yiisoft/yii2/db/Connection.php(883): yii\db\Connection->getMasterPdo()
+#2 /home/william/www/projetoyiiaula/vendor/yiisoft/yii2/db/Command.php(219): yii\db\Connection->getSlavePdo()
+#3 /home/william/www/projetoyiiaula/vendor/yiisoft/yii2/db/Command.php(896): yii\db\Command->prepare(true)
+#4 /home/william/www/projetoyiiaula/vendor/yiisoft/yii2/db/Command.php(362): yii\db\Command->queryInternal('fetchAll', NULL)
+#5 /home/william/www/projetoyiiaula/vendor/yiisoft/yii2/db/Query.php(213): yii\db\Command->queryAll()
+#6 /home/william/www/projetoyiiaula/vendor/yiisoft/yii2/db/ActiveQuery.php(133): yii\db\Query->all(NULL)
+#7 /home/william/www/projetoyiiaula/controllers/IndexController.php(16): yii\db\ActiveQuery->all()
+#8 [internal function]: app\controllers\IndexController->actionIndex()
+#9 /home/william/www/projetoyiiaula/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#10 /home/william/www/projetoyiiaula/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#11 /home/william/www/projetoyiiaula/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('index', Array)
+#12 /home/william/www/projetoyiiaula/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('index/index', Array)
+#13 /home/william/www/projetoyiiaula/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#14 /home/william/www/projetoyiiaula/web/index.php(12): yii\base\Application->run()
+#15 {main}
+Additional Information:
+
+2017-07-28 23:30:01 [::1][-][-][info][application] $_GET = [
+    'r' => 'index/index'
+]
+
+$_COOKIE = [
+    '_csrf' => '89f9185073b41952c7a66f0969f3968da51ee28c57fbd13cf583d9766956a5f2a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"XHkgeqIe3WOarTJbpWfljOvizWEMcEET\";}'
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'WXvI@Zf7p7NybN@IzsSoAwAAAAA'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Fedora; Linux x86_64; rv:54.0) Gecko/20100101 Firefox/54.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/projetoyiiaula/web/index.php?r=index%2Fcontato'
+    'HTTP_COOKIE' => '_csrf=89f9185073b41952c7a66f0969f3968da51ee28c57fbd13cf583d9766956a5f2a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22XHkgeqIe3WOarTJbpWfljOvizWEMcEET%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.27 (Fedora) PHP/7.1.7'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/home/william/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/home/william/www'
+    'SERVER_ADMIN' => 'root@localhost'
+    'SCRIPT_FILENAME' => '/home/william/www/projetoyiiaula/web/index.php'
+    'REMOTE_PORT' => '38370'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=index%2Findex'
+    'REQUEST_URI' => '/projetoyiiaula/web/index.php?r=index%2Findex'
+    'SCRIPT_NAME' => '/projetoyiiaula/web/index.php'
+    'PHP_SELF' => '/projetoyiiaula/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1501284601.923
+    'REQUEST_TIME' => 1501284601
+]
+2017-07-28 23:32:50 [::1][-][-][error][yii\db\Exception] PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'yii2aula.post' doesn't exist in /home/william/www/projetoyiiaula/vendor/yiisoft/yii2/db/Command.php:902
+Stack trace:
+#0 /home/william/www/projetoyiiaula/vendor/yiisoft/yii2/db/Command.php(902): PDOStatement->execute()
+#1 /home/william/www/projetoyiiaula/vendor/yiisoft/yii2/db/Command.php(362): yii\db\Command->queryInternal('fetchAll', NULL)
+#2 /home/william/www/projetoyiiaula/vendor/yiisoft/yii2/db/Query.php(213): yii\db\Command->queryAll()
+#3 /home/william/www/projetoyiiaula/vendor/yiisoft/yii2/db/ActiveQuery.php(133): yii\db\Query->all(NULL)
+#4 /home/william/www/projetoyiiaula/controllers/IndexController.php(16): yii\db\ActiveQuery->all()
+#5 [internal function]: app\controllers\IndexController->actionIndex()
+#6 /home/william/www/projetoyiiaula/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#7 /home/william/www/projetoyiiaula/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#8 /home/william/www/projetoyiiaula/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('index', Array)
+#9 /home/william/www/projetoyiiaula/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('index/index', Array)
+#10 /home/william/www/projetoyiiaula/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 /home/william/www/projetoyiiaula/web/index.php(12): yii\base\Application->run()
+#12 {main}
+
+Next yii\db\Exception: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'yii2aula.post' doesn't exist
+The SQL being executed was: SELECT * FROM `post` in /home/william/www/projetoyiiaula/vendor/yiisoft/yii2/db/Schema.php:636
+Stack trace:
+#0 /home/william/www/projetoyiiaula/vendor/yiisoft/yii2/db/Command.php(917): yii\db\Schema->convertException(Object(PDOException), 'SELECT * FROM `...')
+#1 /home/william/www/projetoyiiaula/vendor/yiisoft/yii2/db/Command.php(362): yii\db\Command->queryInternal('fetchAll', NULL)
+#2 /home/william/www/projetoyiiaula/vendor/yiisoft/yii2/db/Query.php(213): yii\db\Command->queryAll()
+#3 /home/william/www/projetoyiiaula/vendor/yiisoft/yii2/db/ActiveQuery.php(133): yii\db\Query->all(NULL)
+#4 /home/william/www/projetoyiiaula/controllers/IndexController.php(16): yii\db\ActiveQuery->all()
+#5 [internal function]: app\controllers\IndexController->actionIndex()
+#6 /home/william/www/projetoyiiaula/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#7 /home/william/www/projetoyiiaula/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#8 /home/william/www/projetoyiiaula/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('index', Array)
+#9 /home/william/www/projetoyiiaula/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('index/index', Array)
+#10 /home/william/www/projetoyiiaula/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 /home/william/www/projetoyiiaula/web/index.php(12): yii\base\Application->run()
+#12 {main}
+Additional Information:
+Array
+(
+    [0] => 42S02
+    [1] => 1146
+    [2] => Table 'yii2aula.post' doesn't exist
+)
+
+2017-07-28 23:32:50 [::1][-][-][info][application] $_GET = [
+    'r' => 'index/index'
+]
+
+$_COOKIE = [
+    '_csrf' => '89f9185073b41952c7a66f0969f3968da51ee28c57fbd13cf583d9766956a5f2a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"XHkgeqIe3WOarTJbpWfljOvizWEMcEET\";}'
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'WXvJopQikqTOACtTkApr3AAAAAY'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Fedora; Linux x86_64; rv:54.0) Gecko/20100101 Firefox/54.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/projetoyiiaula/web/index.php?r=index%2Fcontato'
+    'HTTP_COOKIE' => '_csrf=89f9185073b41952c7a66f0969f3968da51ee28c57fbd13cf583d9766956a5f2a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22XHkgeqIe3WOarTJbpWfljOvizWEMcEET%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.27 (Fedora) PHP/7.1.7'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/home/william/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/home/william/www'
+    'SERVER_ADMIN' => 'root@localhost'
+    'SCRIPT_FILENAME' => '/home/william/www/projetoyiiaula/web/index.php'
+    'REMOTE_PORT' => '38392'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=index%2Findex'
+    'REQUEST_URI' => '/projetoyiiaula/web/index.php?r=index%2Findex'
+    'SCRIPT_NAME' => '/projetoyiiaula/web/index.php'
+    'PHP_SELF' => '/projetoyiiaula/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1501284770.227
+    'REQUEST_TIME' => 1501284770
+]
+2017-07-28 23:42:35 [::1][-][-][error][yii\base\UnknownPropertyException] yii\base\UnknownPropertyException: Getting unknown property: app\models\PostSearch::idpost in /home/william/www/projetoyiiaula/vendor/yiisoft/yii2/base/Component.php:147
+Stack trace:
+#0 /home/william/www/projetoyiiaula/vendor/yiisoft/yii2/db/BaseActiveRecord.php(286): yii\base\Component->__get('idpost')
+#1 /home/william/www/projetoyiiaula/vendor/yiisoft/yii2/validators/Validator.php(264): yii\db\BaseActiveRecord->__get('idpost')
+#2 /home/william/www/projetoyiiaula/vendor/yiisoft/yii2/base/Model.php(358): yii\validators\Validator->validateAttributes(Object(app\models\PostSearch), Array)
+#3 /home/william/www/projetoyiiaula/models/PostSearch.php(54): yii\base\Model->validate()
+#4 /home/william/www/projetoyiiaula/controllers/PostController.php(40): app\models\PostSearch->search(Array)
+#5 [internal function]: app\controllers\PostController->actionIndex()
+#6 /home/william/www/projetoyiiaula/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#7 /home/william/www/projetoyiiaula/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#8 /home/william/www/projetoyiiaula/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('index', Array)
+#9 /home/william/www/projetoyiiaula/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('post/index', Array)
+#10 /home/william/www/projetoyiiaula/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 /home/william/www/projetoyiiaula/web/index.php(12): yii\base\Application->run()
+#12 {main}
+2017-07-28 23:42:35 [::1][-][-][info][application] $_GET = [
+    'r' => 'post/index'
+]
+
+$_COOKIE = [
+    '_csrf' => '5547a9c106c6dfff1b5f04497709905a660b2a1bac1eb5a94947fcfbc28830fba:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"UxWkyVPWoHV_auA0w9IEepwmR23KxnNZ\";}'
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'WXvL6165mLpZuz4ofxlIqQAAAAQ'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Fedora; Linux x86_64; rv:54.0) Gecko/20100101 Firefox/54.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/projetoyiiaula/web/'
+    'HTTP_COOKIE' => '_csrf=5547a9c106c6dfff1b5f04497709905a660b2a1bac1eb5a94947fcfbc28830fba%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22UxWkyVPWoHV_auA0w9IEepwmR23KxnNZ%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.27 (Fedora) PHP/7.1.7'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/home/william/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/home/william/www'
+    'SERVER_ADMIN' => 'root@localhost'
+    'SCRIPT_FILENAME' => '/home/william/www/projetoyiiaula/web/index.php'
+    'REMOTE_PORT' => '38768'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=post%2Findex'
+    'REQUEST_URI' => '/projetoyiiaula/web/index.php?r=post%2Findex'
+    'SCRIPT_NAME' => '/projetoyiiaula/web/index.php'
+    'PHP_SELF' => '/projetoyiiaula/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1501285355.765
+    'REQUEST_TIME' => 1501285355
+]
+2017-07-28 23:42:56 [::1][-][-][error][yii\base\UnknownPropertyException] yii\base\UnknownPropertyException: Getting unknown property: app\models\PostSearch::idpost in /home/william/www/projetoyiiaula/vendor/yiisoft/yii2/base/Component.php:147
+Stack trace:
+#0 /home/william/www/projetoyiiaula/vendor/yiisoft/yii2/db/BaseActiveRecord.php(286): yii\base\Component->__get('idpost')
+#1 /home/william/www/projetoyiiaula/vendor/yiisoft/yii2/validators/Validator.php(264): yii\db\BaseActiveRecord->__get('idpost')
+#2 /home/william/www/projetoyiiaula/vendor/yiisoft/yii2/base/Model.php(358): yii\validators\Validator->validateAttributes(Object(app\models\PostSearch), Array)
+#3 /home/william/www/projetoyiiaula/models/PostSearch.php(54): yii\base\Model->validate()
+#4 /home/william/www/projetoyiiaula/controllers/PostController.php(40): app\models\PostSearch->search(Array)
+#5 [internal function]: app\controllers\PostController->actionIndex()
+#6 /home/william/www/projetoyiiaula/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#7 /home/william/www/projetoyiiaula/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#8 /home/william/www/projetoyiiaula/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('index', Array)
+#9 /home/william/www/projetoyiiaula/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('post/index', Array)
+#10 /home/william/www/projetoyiiaula/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 /home/william/www/projetoyiiaula/web/index.php(12): yii\base\Application->run()
+#12 {main}
+2017-07-28 23:42:56 [::1][-][-][info][application] $_GET = [
+    'r' => 'post/index'
+]
+
+$_COOKIE = [
+    '_csrf' => '5547a9c106c6dfff1b5f04497709905a660b2a1bac1eb5a94947fcfbc28830fba:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"UxWkyVPWoHV_auA0w9IEepwmR23KxnNZ\";}'
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'WXvMAKGnyfnXACXD@54bsQAAAAk'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Fedora; Linux x86_64; rv:54.0) Gecko/20100101 Firefox/54.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/projetoyiiaula/web/index.php?r=product'
+    'HTTP_COOKIE' => '_csrf=5547a9c106c6dfff1b5f04497709905a660b2a1bac1eb5a94947fcfbc28830fba%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22UxWkyVPWoHV_auA0w9IEepwmR23KxnNZ%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.27 (Fedora) PHP/7.1.7'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/home/william/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/home/william/www'
+    'SERVER_ADMIN' => 'root@localhost'
+    'SCRIPT_FILENAME' => '/home/william/www/projetoyiiaula/web/index.php'
+    'REMOTE_PORT' => '38802'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=post%2Findex'
+    'REQUEST_URI' => '/projetoyiiaula/web/index.php?r=post%2Findex'
+    'SCRIPT_NAME' => '/projetoyiiaula/web/index.php'
+    'PHP_SELF' => '/projetoyiiaula/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1501285376.695
+    'REQUEST_TIME' => 1501285376
+]
+2017-07-28 23:47:31 [::1][-][-][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "produtos/index". in /home/william/www/projetoyiiaula/vendor/yiisoft/yii2/base/Module.php:532
+Stack trace:
+#0 /home/william/www/projetoyiiaula/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('produtos/index', Array)
+#1 /home/william/www/projetoyiiaula/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /home/william/www/projetoyiiaula/web/index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Página não encontrada. in /home/william/www/projetoyiiaula/vendor/yiisoft/yii2/web/Application.php:114
+Stack trace:
+#0 /home/william/www/projetoyiiaula/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /home/william/www/projetoyiiaula/web/index.php(12): yii\base\Application->run()
+#2 {main}
+2017-07-28 23:47:31 [::1][-][-][info][application] $_GET = [
+    'r' => 'produtos/index'
+]
+
+$_COOKIE = [
+    '_csrf' => '5547a9c106c6dfff1b5f04497709905a660b2a1bac1eb5a94947fcfbc28830fba:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"UxWkyVPWoHV_auA0w9IEepwmR23KxnNZ\";}'
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'WXvNE3nFP742pk7yvlyDWwAAAAg'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Fedora; Linux x86_64; rv:54.0) Gecko/20100101 Firefox/54.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/projetoyiiaula/web/index.php?r=index%2Findex'
+    'HTTP_COOKIE' => '_csrf=5547a9c106c6dfff1b5f04497709905a660b2a1bac1eb5a94947fcfbc28830fba%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22UxWkyVPWoHV_auA0w9IEepwmR23KxnNZ%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.27 (Fedora) PHP/7.1.7'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/home/william/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/home/william/www'
+    'SERVER_ADMIN' => 'root@localhost'
+    'SCRIPT_FILENAME' => '/home/william/www/projetoyiiaula/web/index.php'
+    'REMOTE_PORT' => '38814'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=produtos%2Findex'
+    'REQUEST_URI' => '/projetoyiiaula/web/index.php?r=produtos%2Findex'
+    'SCRIPT_NAME' => '/projetoyiiaula/web/index.php'
+    'PHP_SELF' => '/projetoyiiaula/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1501285651.434
+    'REQUEST_TIME' => 1501285651
+]
+2017-07-28 23:47:38 [::1][-][-][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "produtos/index". in /home/william/www/projetoyiiaula/vendor/yiisoft/yii2/base/Module.php:532
+Stack trace:
+#0 /home/william/www/projetoyiiaula/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('produtos/index', Array)
+#1 /home/william/www/projetoyiiaula/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /home/william/www/projetoyiiaula/web/index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Página não encontrada. in /home/william/www/projetoyiiaula/vendor/yiisoft/yii2/web/Application.php:114
+Stack trace:
+#0 /home/william/www/projetoyiiaula/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /home/william/www/projetoyiiaula/web/index.php(12): yii\base\Application->run()
+#2 {main}
+2017-07-28 23:47:38 [::1][-][-][info][application] $_GET = [
+    'r' => 'produtos/index'
+]
+
+$_COOKIE = [
+    '_csrf' => '5547a9c106c6dfff1b5f04497709905a660b2a1bac1eb5a94947fcfbc28830fba:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"UxWkyVPWoHV_auA0w9IEepwmR23KxnNZ\";}'
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'WXvNGtIi6aC3s2Jh6k0r8AAAAAM'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Fedora; Linux x86_64; rv:54.0) Gecko/20100101 Firefox/54.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/projetoyiiaula/web/index.php?r=index%2Findex'
+    'HTTP_COOKIE' => '_csrf=5547a9c106c6dfff1b5f04497709905a660b2a1bac1eb5a94947fcfbc28830fba%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22UxWkyVPWoHV_auA0w9IEepwmR23KxnNZ%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.27 (Fedora) PHP/7.1.7'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/home/william/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/home/william/www'
+    'SERVER_ADMIN' => 'root@localhost'
+    'SCRIPT_FILENAME' => '/home/william/www/projetoyiiaula/web/index.php'
+    'REMOTE_PORT' => '38816'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=produtos%2Findex'
+    'REQUEST_URI' => '/projetoyiiaula/web/index.php?r=produtos%2Findex'
+    'SCRIPT_NAME' => '/projetoyiiaula/web/index.php'
+    'PHP_SELF' => '/projetoyiiaula/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1501285658.355
+    'REQUEST_TIME' => 1501285658
+]
+2017-07-28 23:47:40 [::1][-][-][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "products/index". in /home/william/www/projetoyiiaula/vendor/yiisoft/yii2/base/Module.php:532
+Stack trace:
+#0 /home/william/www/projetoyiiaula/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('products/index', Array)
+#1 /home/william/www/projetoyiiaula/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /home/william/www/projetoyiiaula/web/index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Página não encontrada. in /home/william/www/projetoyiiaula/vendor/yiisoft/yii2/web/Application.php:114
+Stack trace:
+#0 /home/william/www/projetoyiiaula/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /home/william/www/projetoyiiaula/web/index.php(12): yii\base\Application->run()
+#2 {main}
+2017-07-28 23:47:40 [::1][-][-][info][application] $_GET = [
+    'r' => 'products/index'
+]
+
+$_COOKIE = [
+    '_csrf' => '5547a9c106c6dfff1b5f04497709905a660b2a1bac1eb5a94947fcfbc28830fba:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"UxWkyVPWoHV_auA0w9IEepwmR23KxnNZ\";}'
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'WXvNHNIi6aC3s2Jh6k0r9wAAAAM'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Fedora; Linux x86_64; rv:54.0) Gecko/20100101 Firefox/54.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/projetoyiiaula/web/index.php?r=produtos%2Findex'
+    'HTTP_COOKIE' => '_csrf=5547a9c106c6dfff1b5f04497709905a660b2a1bac1eb5a94947fcfbc28830fba%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22UxWkyVPWoHV_auA0w9IEepwmR23KxnNZ%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.27 (Fedora) PHP/7.1.7'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/home/william/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/home/william/www'
+    'SERVER_ADMIN' => 'root@localhost'
+    'SCRIPT_FILENAME' => '/home/william/www/projetoyiiaula/web/index.php'
+    'REMOTE_PORT' => '38816'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=products%2Findex'
+    'REQUEST_URI' => '/projetoyiiaula/web/index.php?r=products%2Findex'
+    'SCRIPT_NAME' => '/projetoyiiaula/web/index.php'
+    'PHP_SELF' => '/projetoyiiaula/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1501285660.064
+    'REQUEST_TIME' => 1501285660
+]
+2017-07-28 23:47:40 [::1][-][-][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "products/index". in /home/william/www/projetoyiiaula/vendor/yiisoft/yii2/base/Module.php:532
+Stack trace:
+#0 /home/william/www/projetoyiiaula/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('products/index', Array)
+#1 /home/william/www/projetoyiiaula/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /home/william/www/projetoyiiaula/web/index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Página não encontrada. in /home/william/www/projetoyiiaula/vendor/yiisoft/yii2/web/Application.php:114
+Stack trace:
+#0 /home/william/www/projetoyiiaula/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /home/william/www/projetoyiiaula/web/index.php(12): yii\base\Application->run()
+#2 {main}
+2017-07-28 23:47:40 [::1][-][-][info][application] $_GET = [
+    'r' => 'products/index'
+]
+
+$_COOKIE = [
+    '_csrf' => '5547a9c106c6dfff1b5f04497709905a660b2a1bac1eb5a94947fcfbc28830fba:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"UxWkyVPWoHV_auA0w9IEepwmR23KxnNZ\";}'
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'WXvNHNIi6aC3s2Jh6k0r@QAAAAM'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Fedora; Linux x86_64; rv:54.0) Gecko/20100101 Firefox/54.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/projetoyiiaula/web/index.php?r=products%2Findex'
+    'HTTP_COOKIE' => '_csrf=5547a9c106c6dfff1b5f04497709905a660b2a1bac1eb5a94947fcfbc28830fba%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22UxWkyVPWoHV_auA0w9IEepwmR23KxnNZ%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.27 (Fedora) PHP/7.1.7'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/home/william/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/home/william/www'
+    'SERVER_ADMIN' => 'root@localhost'
+    'SCRIPT_FILENAME' => '/home/william/www/projetoyiiaula/web/index.php'
+    'REMOTE_PORT' => '38816'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=products%2Findex'
+    'REQUEST_URI' => '/projetoyiiaula/web/index.php?r=products%2Findex'
+    'SCRIPT_NAME' => '/projetoyiiaula/web/index.php'
+    'PHP_SELF' => '/projetoyiiaula/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1501285660.607
+    'REQUEST_TIME' => 1501285660
+]
+2017-07-28 23:47:40 [::1][-][-][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "products/index". in /home/william/www/projetoyiiaula/vendor/yiisoft/yii2/base/Module.php:532
+Stack trace:
+#0 /home/william/www/projetoyiiaula/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('products/index', Array)
+#1 /home/william/www/projetoyiiaula/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /home/william/www/projetoyiiaula/web/index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Página não encontrada. in /home/william/www/projetoyiiaula/vendor/yiisoft/yii2/web/Application.php:114
+Stack trace:
+#0 /home/william/www/projetoyiiaula/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /home/william/www/projetoyiiaula/web/index.php(12): yii\base\Application->run()
+#2 {main}
+2017-07-28 23:47:40 [::1][-][-][info][application] $_GET = [
+    'r' => 'products/index'
+]
+
+$_COOKIE = [
+    '_csrf' => '5547a9c106c6dfff1b5f04497709905a660b2a1bac1eb5a94947fcfbc28830fba:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"UxWkyVPWoHV_auA0w9IEepwmR23KxnNZ\";}'
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'WXvNHNIi6aC3s2Jh6k0r@wAAAAM'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Fedora; Linux x86_64; rv:54.0) Gecko/20100101 Firefox/54.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/projetoyiiaula/web/index.php?r=products%2Findex'
+    'HTTP_COOKIE' => '_csrf=5547a9c106c6dfff1b5f04497709905a660b2a1bac1eb5a94947fcfbc28830fba%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22UxWkyVPWoHV_auA0w9IEepwmR23KxnNZ%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.27 (Fedora) PHP/7.1.7'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/home/william/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/home/william/www'
+    'SERVER_ADMIN' => 'root@localhost'
+    'SCRIPT_FILENAME' => '/home/william/www/projetoyiiaula/web/index.php'
+    'REMOTE_PORT' => '38816'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=products%2Findex'
+    'REQUEST_URI' => '/projetoyiiaula/web/index.php?r=products%2Findex'
+    'SCRIPT_NAME' => '/projetoyiiaula/web/index.php'
+    'PHP_SELF' => '/projetoyiiaula/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1501285660.815
+    'REQUEST_TIME' => 1501285660
+]
+2017-07-28 23:47:48 [::1][-][-][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "products/index". in /home/william/www/projetoyiiaula/vendor/yiisoft/yii2/base/Module.php:532
+Stack trace:
+#0 /home/william/www/projetoyiiaula/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('products/index', Array)
+#1 /home/william/www/projetoyiiaula/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /home/william/www/projetoyiiaula/web/index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Página não encontrada. in /home/william/www/projetoyiiaula/vendor/yiisoft/yii2/web/Application.php:114
+Stack trace:
+#0 /home/william/www/projetoyiiaula/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /home/william/www/projetoyiiaula/web/index.php(12): yii\base\Application->run()
+#2 {main}
+2017-07-28 23:47:48 [::1][-][-][info][application] $_GET = [
+    'r' => 'products/index'
+]
+
+$_COOKIE = [
+    '_csrf' => '5547a9c106c6dfff1b5f04497709905a660b2a1bac1eb5a94947fcfbc28830fba:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"UxWkyVPWoHV_auA0w9IEepwmR23KxnNZ\";}'
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'WXvNJNIi6aC3s2Jh6k0sGQAAAAM'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Fedora; Linux x86_64; rv:54.0) Gecko/20100101 Firefox/54.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/projetoyiiaula/web/index.php?r=product'
+    'HTTP_COOKIE' => '_csrf=5547a9c106c6dfff1b5f04497709905a660b2a1bac1eb5a94947fcfbc28830fba%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22UxWkyVPWoHV_auA0w9IEepwmR23KxnNZ%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.27 (Fedora) PHP/7.1.7'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/home/william/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/home/william/www'
+    'SERVER_ADMIN' => 'root@localhost'
+    'SCRIPT_FILENAME' => '/home/william/www/projetoyiiaula/web/index.php'
+    'REMOTE_PORT' => '38816'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=products%2Findex'
+    'REQUEST_URI' => '/projetoyiiaula/web/index.php?r=products%2Findex'
+    'SCRIPT_NAME' => '/projetoyiiaula/web/index.php'
+    'PHP_SELF' => '/projetoyiiaula/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1501285668.755
+    'REQUEST_TIME' => 1501285668
+]
